@@ -1,4 +1,5 @@
 import csv
+import json
 import numpy as np
 
 #   Pause program command line with custom message
@@ -7,46 +8,76 @@ def pause(message):
 
 #   Read CSV file and store in multidimensional array
 def loadCSV(filename):
-    print(filename)
-    price = []
-    dateProcessed = []
-    postcode = []
+    print('Reading ' + filename + '...')
+    columns = []
+    csvData = {}
+
+    #   Read column headers
+    with open(filename, "rb") as csvFile:
+        reader = csv.reader(csvFile)
+        columns = reader.next()
+
+    #   Add object key to csvData for each column header
+    for header in columns:
+        csvData.update({ header: [] })
 
     #   Select row elements to store in array
     with open(filename) as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            price.append(int(row['price']))
-            dateProcessed.append(row['date_processed'])
-            postcode.append(row['post_code'])
+            for key in csvData:
+                csvData[key].append(row[key])
 
-    return [postcode, price, dateProcessed];
+    return csvData
+
+def combineDictionaries(arrayOfDictionaries):
+    resultDictionary = {}
+    primaryKeys = []
+    toRemove = []
+
+    #   Add keys from first dictionary to array primaryKeys
+    for key in arrayOfDictionaries[0]:
+        primaryKeys.append(key)
+
+    #   Find keys which do not exist in all dictionaries
+    for arr in arrayOfDictionaries:
+        for key in primaryKeys:
+            if not (key in arr):
+                toRemove.append(key)
+
+    #   Remove keys which do not exist in all dictionaries
+    for key in toRemove:
+        primaryKeys.remove(key)
+
+    #   Initialise keys of resultDictionary
+    for key in primaryKeys:
+        resultDictionary.update({ key: [] })
+
+    #   Combine values from each dictionary
+    for key in resultDictionary:
+        joinValues = []
+        for arr in arrayOfDictionaries:
+            joinValues = joinValues + arr[key]
+
+        resultDictionary.update({ key: joinValues })
+
+    return resultDictionary
 
 def main():
-    print("\n\nAnalysis of London Property Sales\n")
-    print("Reading data files...")
-    dataGroup1 = loadCSV("London Year_1995-2000.csv")
-    dataGroup2 = loadCSV("London Year_2001-2006.csv")
-    dataGroup3 = loadCSV("London Year_2007-2012.csv")
-    dataGroup4 = loadCSV("London Year_2013-2014.csv")
+    print("\nAnalysis of London Property Sales\n")
 
-    #   Get average price of each data group
-    sum1 = sum(dataGroup1[1])
-    average1 = sum1 / len(dataGroup1[1])
-    sum2 = sum(dataGroup2[1])
-    average2 = sum2 / len(dataGroup2[1])
-    sum3 = sum(dataGroup3[1])
-    average3 = sum3 / len(dataGroup3[1])
-    sum4 = sum(dataGroup4[1])
-    average4 = sum4 / len(dataGroup4[1])
-    average1 = ('{:20,.2f}'.format(average1))
-    average2 = ('{:20,.2f}'.format(average2))
-    average3 = ('{:20,.2f}'.format(average3))
-    average4 = ('{:20,.2f}'.format(average4))
-    print("Average Price of London Properties Sold Between 1995 and 2000:\n" + str(average1))
-    print("Average Price of London Properties Sold Between 2001 and 2006:\n" + str(average2))
-    print("Average Price of London Properties Sold Between 2007 and 2012:\n" + str(average3))
-    print("Average Price of London Properties Sold Between 2013 and 2014:\n" + str(average4))
+    #   Read config file to get paths to csv data
+    configData = []
+    with open('config.json') as data_file:
+        configData = json.load(data_file)
+
+    #   Read raw csv files
+    csvData = []
+    for path in configData['path_to_data_files']:
+        csvData.append(loadCSV(path))
+
+    #   Combine csv data to create dictionary containing all column data
+    londonData = combineDictionaries( csvData )
 
     pause("\nPress the enter key to continue...")
 

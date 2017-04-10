@@ -1,0 +1,8 @@
+{
+	"path_to_data_files": [
+		"data/London Year_1995-2000.csv",
+		"data/London Year_2001-2006.csv",
+		"data/London Year_2007-2012.csv",
+		"data/London Year_2013-2014.csv"
+	]
+}
