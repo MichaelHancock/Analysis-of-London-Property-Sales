@@ -31,6 +31,7 @@ def loadCSV(filename):
     return csvData
 
 def combineDictionaries(arrayOfDictionaries):
+    print "Combining {} data sets...".format(len(arrayOfDictionaries))
     resultDictionary = {}
     primaryKeys = []
     toRemove = []
@@ -63,6 +64,24 @@ def combineDictionaries(arrayOfDictionaries):
 
     return resultDictionary
 
+def priceOfPropertyOverTime(londonData):
+    print('Calculating price of property over time...')
+    priceOverTime = {}
+    resultPricePerYear = {}
+
+    #   Populate keys of priceOverTime
+    for year in londonData['year']:
+        if not (year in priceOverTime):
+            priceOverTime.update({ year: [] })
+
+    for index, year in enumerate(londonData['year']):
+        priceOverTime[year].append(int(londonData['price'][index]))
+
+    for key in priceOverTime:
+        resultPricePerYear.update({ key: sum(priceOverTime[key]) / len(priceOverTime[key])})
+
+    return resultPricePerYear
+
 def main():
     print("\nAnalysis of London Property Sales\n")
 
@@ -77,7 +96,13 @@ def main():
         csvData.append(loadCSV(path))
 
     #   Combine csv data to create dictionary containing all column data
-    londonData = combineDictionaries( csvData )
+    londonData = combineDictionaries(csvData)
+
+    #   Calculate price changes over time
+    pricePerYear = priceOfPropertyOverTime(londonData)
+
+    for key in sorted(pricePerYear):
+        print ("{} {}".format(key, '{:00,.2f} GBP'.format(pricePerYear[key])))
 
     pause("\nPress the enter key to continue...")
 
