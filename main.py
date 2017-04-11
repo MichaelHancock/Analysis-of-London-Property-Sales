@@ -64,23 +64,25 @@ def combineDictionaries(arrayOfDictionaries):
 
     return resultDictionary
 
-def priceOfPropertyOverTime(londonData):
-    print('Calculating price of property over time...')
-    priceOverTime = {}
-    resultPricePerYear = {}
+def priceVsLondonDataAttribute(londonData, attribute):
+    salesData = {}
+    result = {}
 
-    #   Populate keys of priceOverTime
-    for year in londonData['year']:
-        if not (year in priceOverTime):
-            priceOverTime.update({ year: [] })
+    #   Populate keys of salesData
+    for key in londonData[attribute]:
+        if (not (key in salesData)) and len(key) > 1:
+            salesData.update({ key: [] })
 
-    for index, year in enumerate(londonData['year']):
-        priceOverTime[year].append(int(londonData['price'][index]))
+    #   Add values to sub-arrays in salesData
+    for index, key in enumerate(londonData[attribute]):
+        if key in salesData:
+            salesData[key].append(int(londonData['price'][index]))
 
-    for key in priceOverTime:
-        resultPricePerYear.update({ key: sum(priceOverTime[key]) / len(priceOverTime[key])})
+    #   Find average prices in attribute range
+    for key in salesData:
+        result.update({ key: sum(salesData[key]) / len(salesData[key] )})
 
-    return resultPricePerYear
+    return result
 
 def main():
     print("\nAnalysis of London Property Sales\n")
@@ -99,10 +101,16 @@ def main():
     londonData = combineDictionaries(csvData)
 
     #   Calculate price changes over time
-    pricePerYear = priceOfPropertyOverTime(londonData)
-
+    print("\nCalculating property price changes over time")
+    pricePerYear = priceVsLondonDataAttribute(londonData, 'year')
     for key in sorted(pricePerYear):
-        print ("{} {}".format(key, '{:00,.2f} GBP'.format(pricePerYear[key])))
+        print ("{} {}".format(key, '\t{:00,.2f} GBP'.format(pricePerYear[key]))).expandtabs(30)
+
+    #   Calculate price changes over time in London boroughs
+    print("\nCalculating average property prices in London boroughs")
+    pricePerBorough = priceVsLondonDataAttribute(londonData, 'borough_name')
+    for key, value in sorted(pricePerBorough.iteritems(), key=lambda (k,v): (v,k)):
+        print ("{} {}".format(key, '\t{:00,.2f} GBP'.format(value))).expandtabs(30)
 
     pause("\nPress the enter key to continue...")
 
