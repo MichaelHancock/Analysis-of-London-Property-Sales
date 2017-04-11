@@ -8,7 +8,7 @@ def pause(message):
 
 #   Read CSV file and store in multidimensional array
 def loadCSV(filename):
-    print('Reading ' + filename + '...')
+    print("Reading " + filename + "...")
     columns = []
     csvData = {}
 
@@ -76,7 +76,7 @@ def priceVsLondonDataAttribute(londonData, attribute):
     #   Add values to sub-arrays in salesData
     for index, key in enumerate(londonData[attribute]):
         if key in salesData:
-            salesData[key].append(int(londonData['price'][index]))
+            salesData[key].append(int(londonData["price"][index]))
 
     #   Find average prices in attribute range
     for key in salesData:
@@ -84,17 +84,75 @@ def priceVsLondonDataAttribute(londonData, attribute):
 
     return result
 
+def getMinOrMaxPricePerYear(londonData, londonBoroughs, getMaximum = False):
+    prices = {}
+
+    #   Populate keys of prices
+    for year in londonData["year"]:
+        if not (year in prices):
+            prices.update({ year: "" })
+
+    #   Calculate most expensive borough for each year
+    currentBest = None
+    currentBestBorough = ""
+    for currentYear in prices:
+        for borough in londonBoroughs:
+            current = londonBoroughs[borough][currentYear]
+            if getMaximum:
+                if current > currentBest or currentBest == None:
+                    currentBest = current
+                    currentBestBorough = borough
+            elif not getMaximum:
+                if (current < currentBest and current > 0) or currentBest == None:
+                    currentBest = current
+                    currentBestBorough = borough
+        prices[currentYear] = "{}: {:00,.2f} GBP".format(currentBestBorough, currentBest)
+        currentBest = None
+        currentBestBorough = ""
+
+    return prices
+
+def calculatePricePerBoroughOverTime(londonData):
+    londonBoroughs = {}
+
+    #   Populate keys of londonBoroughs
+    for borough in londonData["borough_name"]:
+        if (not (borough in londonBoroughs)) and len(borough) > 1:
+            londonBoroughs.update({ borough: {} })
+
+    #   Add sub-keys to londonBoroughs
+    for borough in londonBoroughs:
+        for year in londonData["year"]:
+            if not (year in londonBoroughs[borough]):
+                londonBoroughs[borough].update({ year: [] })
+
+    #   Populate sub-arrays of prices
+    for index, borough in enumerate(londonData["borough_name"]):
+        if borough in londonBoroughs:
+            londonBoroughs[borough][londonData["year"][index]].append(int(londonData["price"][index]))
+
+    #   Calculate average for each sub-array
+    for borough in londonBoroughs:
+        for year in londonBoroughs[borough]:
+            sumValue = sum(londonBoroughs[borough][year])
+            if sumValue > 0:
+                londonBoroughs[borough][year] = sum(londonBoroughs[borough][year]) / len(londonBoroughs[borough][year])
+            else:
+                londonBoroughs[borough][year] = 0
+
+    return londonBoroughs
+
 def main():
     print("\nAnalysis of London Property Sales\n")
 
     #   Read config file to get paths to csv data
     configData = []
-    with open('config.json') as data_file:
+    with open("config.json") as data_file:
         configData = json.load(data_file)
 
     #   Read raw csv files
     csvData = []
-    for path in configData['path_to_data_files']:
+    for path in configData["path_to_data_files"]:
         csvData.append(loadCSV(path))
 
     #   Combine csv data to create dictionary containing all column data
@@ -102,15 +160,33 @@ def main():
 
     #   Calculate price changes over time
     print("\nCalculating property price changes over time")
-    pricePerYear = priceVsLondonDataAttribute(londonData, 'year')
+    pricePerYear = priceVsLondonDataAttribute(londonData, "year")
     for key in sorted(pricePerYear):
-        print ("{} {}".format(key, '\t{:00,.2f} GBP'.format(pricePerYear[key]))).expandtabs(30)
+        print ("{} {}".format(key, "\t{:00,.2f} GBP".format(pricePerYear[key]))).expandtabs(30)
+
+    #   Calculate average price over London boroughs
+    print("\nCalculating average property prices in London boroughs")
+    pricePerBorough = priceVsLondonDataAttribute(londonData, "borough_name")
+    for key, value in sorted(pricePerBorough.iteritems(), key=lambda (k,v): (v,k)):
+        print ("{} {}".format(key, "\t{:00,.2f} GBP".format(value))).expandtabs(30)
 
     #   Calculate price changes over time in London boroughs
-    print("\nCalculating average property prices in London boroughs")
-    pricePerBorough = priceVsLondonDataAttribute(londonData, 'borough_name')
-    for key, value in sorted(pricePerBorough.iteritems(), key=lambda (k,v): (v,k)):
-        print ("{} {}".format(key, '\t{:00,.2f} GBP'.format(value))).expandtabs(30)
+    print("\nCalculating average property prices changes over time in London boroughs")
+    pricePerBoroughOverTime = calculatePricePerBoroughOverTime(londonData)
+    maxPropertyPrices = getMinOrMaxPricePerYear(londonData, pricePerBoroughOverTime, True)
+    minPropertyPrices = getMinOrMaxPricePerYear(londonData, pricePerBoroughOverTime, False)
+    for key in sorted(maxPropertyPrices):
+        print("{}:\tMost expensive: {}. \n\tLeast expensive: {}.\n").format(key, maxPropertyPrices[key], minPropertyPrices[key])
+    print("Detailed output of price per year in London boroughs saved at Output/London_Borough_Statistics.txt")
+
+    #   Output borough statistics to file
+    output = "Borough\t| Year | Average Price\n\n".expandtabs(25)
+    for borough in pricePerBoroughOverTime:
+        for key, value in sorted(pricePerBoroughOverTime[borough].iteritems(), key=lambda (k,v): (v,k)):
+            output = output + "{}\t| {} | {:00,.2f}\n".format(borough, key, pricePerBoroughOverTime[borough][key]).expandtabs(25)
+    text_file = open("Output/London_Borough_Statistics.txt", "w")
+    text_file.write(output)
+    text_file.close()
 
     pause("\nPress the enter key to continue...")
 
