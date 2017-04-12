@@ -1,4 +1,5 @@
 import csv
+import math
 import json
 import numpy as np
 
@@ -64,7 +65,7 @@ def combineDictionaries(arrayOfDictionaries):
 
     return resultDictionary
 
-def priceVsLondonDataAttribute(londonData, attribute):
+def meanPriceVsLondonDataAttribute(londonData, attribute):
     salesData = {}
     result = {}
 
@@ -79,8 +80,37 @@ def priceVsLondonDataAttribute(londonData, attribute):
             salesData[key].append(int(londonData["price"][index]))
 
     #   Find average prices in attribute range
-    for key in salesData:
-        result.update({ key: sum(salesData[key]) / len(salesData[key] )})
+    for sale in salesData:
+        result.update({ sale: sum(salesData[sale]) / len(salesData[sale] )})
+
+    return result
+
+def medianPriceVsLondonDataAttribute(londonData, attribute):
+    salesData = {}
+    result = {}
+
+    #   Populate keys of salesData
+    for key in londonData[attribute]:
+        if (not (key in salesData)) and len(key) > 1:
+            salesData.update({ key: [] })
+
+    #   Add values to sub-arrays in salesData
+    for index, key in enumerate(londonData[attribute]):
+        if key in salesData:
+            salesData[key].append(int(londonData["price"][index]))
+
+    #   Sort prices in sub-arrays
+    for sale in salesData:
+        salesData[sale] = sorted(salesData[sale])
+
+    #   Get median value
+    for sale in salesData:
+        if (len(salesData[sale]) % 2) == 0:
+            index = len(salesData[sale]) / 2
+            result.update({ sale: (float(salesData[sale][index - 1]) + float(salesData[sale][index])) / 2 })
+        else:
+            index = int(math.floor(len(salesData[sale]) / 2))
+            result.update({ sale: salesData[sale][index] })
 
     return result
 
@@ -183,16 +213,28 @@ def main():
     #   Combine csv data to create dictionary containing all column data
     londonData = combineDictionaries(csvData)
 
-    #   Calculate price changes over time
-    print("\nCalculating property price changes over time")
-    pricePerYear = priceVsLondonDataAttribute(londonData, "year")
-    for key in sorted(pricePerYear):
-        print ("{} {}".format(key, "\t{:00,.2f} GBP".format(pricePerYear[key]))).expandtabs(30)
+    #   Calculate average price over time
+    print("\nCalculating average property price changes over time")
+    meanPricePerYear = meanPriceVsLondonDataAttribute(londonData, "year")
+    for key in sorted(meanPricePerYear):
+        print ("{} {}".format(key, "\t{:00,.2f} GBP".format(meanPricePerYear[key]))).expandtabs(30)
+
+    #   Calculate median price over time
+    print("\nCalculating median property price changes over time")
+    medianPricePerYear = medianPriceVsLondonDataAttribute(londonData, "year")
+    for key in sorted(medianPricePerYear):
+        print ("{} {}".format(key, "\t{:00,.2f} GBP".format(medianPricePerYear[key]))).expandtabs(30)
 
     #   Calculate average price over London boroughs
     print("\nCalculating average property prices in London boroughs")
-    pricePerBorough = priceVsLondonDataAttribute(londonData, "borough_name")
+    pricePerBorough = meanPriceVsLondonDataAttribute(londonData, "borough_name")
     for key, value in sorted(pricePerBorough.iteritems(), key=lambda (k,v): (v,k)):
+        print ("{} {}".format(key, "\t{:00,.2f} GBP".format(value))).expandtabs(30)
+
+    #   Calculate median price over London boroughs
+    print("\nCalculating median property prices in London boroughs")
+    medianPricePerBorough = medianPriceVsLondonDataAttribute(londonData, "borough_name")
+    for key, value in sorted(medianPricePerBorough.iteritems(), key=lambda (k,v): (v,k)):
         print ("{} {}".format(key, "\t{:00,.2f} GBP".format(value))).expandtabs(30)
 
     #   Calculate price changes over time in London boroughs
@@ -200,7 +242,7 @@ def main():
     pricePerBoroughOverTime = calculatePricePerBoroughOverTime(londonData)
     maxPropertyPrices = getMinOrMaxPricePerYear(londonData, pricePerBoroughOverTime, True)
     minPropertyPrices = getMinOrMaxPricePerYear(londonData, pricePerBoroughOverTime, False)
-    print("\nDetailed output of price per year in London boroughs saved at Output/London_Borough_Statistics.txt")
+    print("\nDetailed output of price per year in London boroughs saved at Output/London_Borough_Statistics.txt\n")
     for key in sorted(maxPropertyPrices):
         print("{}:\tMost expensive borough: {}. \n\tLeast expensive borough: {}.\n").format(key, maxPropertyPrices[key], minPropertyPrices[key])
 
