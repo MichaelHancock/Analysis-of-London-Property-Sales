@@ -172,17 +172,8 @@ def calculatePricePerBoroughOverTime(londonData):
 
     return londonBoroughs
 
-def calculatePercentageChangeInBoroughs(londonData, londonBoroughs):
-    minYear = None
-    maxYear = None
+def calculatePercentageChangeInBoroughs(londonData, londonBoroughs, minYear, maxYear):
     boroughPercentageChange = {}
-
-    #   Get Value of minYear and maxYear
-    for year in londonData['year']:
-        if year > maxYear or maxYear == None:
-            maxYear = year
-        if year < minYear or minYear == None:
-            minYear = year
 
     #   Calculate percentage change
     for borough in londonBoroughs:
@@ -196,6 +187,26 @@ def calculatePercentageChangeInBoroughs(londonData, londonBoroughs):
                 boroughPercentageChange.update({ borough : 0 })
 
     return boroughPercentageChange
+
+def calculateYearByYearPercentageChange(londonData, meanPricePerYear):
+    years = []
+    changePerYear = {}
+
+    #   Populate value of years
+    for currentYear in sorted(meanPricePerYear):
+        years.append(currentYear)
+
+    #   Calculate percentage change between each year
+    for index, year in enumerate(sorted(meanPricePerYear)):
+        if index < (len(meanPricePerYear) - 1):
+            difference = meanPricePerYear[years[index + 1]] - meanPricePerYear[years[index]]
+            percentageChange = float(difference) / float(meanPricePerYear[years[index]]) * 100
+            changePerYear.update({
+                "{} - {}".format(str(years[index]), str(years[index + 1])) :
+                    percentageChange
+                })
+
+    return changePerYear
 
 def main():
     print("\nAnalysis of London Property Sales\n")
@@ -213,6 +224,15 @@ def main():
     #   Combine csv data to create dictionary containing all column data
     londonData = combineDictionaries(csvData)
 
+    #   Get Value of minYear and maxYear
+    minYear = None
+    maxYear = None
+    for year in londonData['year']:
+        if year > maxYear or maxYear == None:
+            maxYear = year
+        if year < minYear or minYear == None:
+            minYear = year
+
     #   Calculate average price over time
     print("\nCalculating average property price changes over time")
     meanPricePerYear = meanPriceVsLondonDataAttribute(londonData, "year")
@@ -224,6 +244,7 @@ def main():
     medianPricePerYear = medianPriceVsLondonDataAttribute(londonData, "year")
     for key in sorted(medianPricePerYear):
         print ("{} {}".format(key, "\t{:00,.2f} GBP".format(medianPricePerYear[key]))).expandtabs(30)
+    medianPricePerYear = []
 
     #   Calculate average price over London boroughs
     print("\nCalculating average property prices in London boroughs")
@@ -236,13 +257,13 @@ def main():
     medianPricePerBorough = medianPriceVsLondonDataAttribute(londonData, "borough_name")
     for key, value in sorted(medianPricePerBorough.iteritems(), key=lambda (k,v): (v,k)):
         print ("{} {}".format(key, "\t{:00,.2f} GBP".format(value))).expandtabs(30)
+    medianPricePerBorough = []
 
     #   Calculate price changes over time in London boroughs
     print("\nCalculating average property price changes over time in London boroughs")
     pricePerBoroughOverTime = calculatePricePerBoroughOverTime(londonData)
     maxPropertyPrices = getMinOrMaxPricePerYear(londonData, pricePerBoroughOverTime, True)
     minPropertyPrices = getMinOrMaxPricePerYear(londonData, pricePerBoroughOverTime, False)
-    print("\nDetailed output of price per year in London boroughs saved at Output/London_Borough_Statistics.txt\n")
     for key in sorted(maxPropertyPrices):
         print("{}:\tMost expensive borough: {}. \n\tLeast expensive borough: {}.\n").format(key, maxPropertyPrices[key], minPropertyPrices[key])
 
@@ -256,12 +277,18 @@ def main():
     text_file.close()
 
     #   Calculate percentage change in borough average prices
-    print ("Calculating percentage change in average prices for London boroughs")
-    boroughPercentageChange = calculatePercentageChangeInBoroughs(londonData, pricePerBoroughOverTime)
+    print ("\nCalculating percentage change in average prices for London boroughs between {} and {}").format(minYear, maxYear)
+    boroughPercentageChange = calculatePercentageChangeInBoroughs(londonData, pricePerBoroughOverTime, minYear, maxYear)
     for key, value in sorted(pricePerBorough.iteritems(), key=lambda (k,v): (v,k)):
         if (not int(boroughPercentageChange[key]) == 0):
             print("{}\t{}%").format(key, round(boroughPercentageChange[key], 2)).expandtabs(30)
+    boroughPercentageChange = []
 
+    #   Calculate year by year percentage price change
+    print ("\nCalculating year by year percentage change")
+    yearByYearPercentageChange = calculateYearByYearPercentageChange(londonData, meanPricePerYear)
+    for years in sorted(yearByYearPercentageChange):
+        print("{}\t{}%").format(years, round(yearByYearPercentageChange[years], 2)).expandtabs(30)
     pause("\nPress the enter key to continue...")
 
 #   Program entry point
