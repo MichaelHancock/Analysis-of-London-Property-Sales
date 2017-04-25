@@ -3,11 +3,9 @@ import math
 import json
 import numpy as np
 
-#   Pause program command line with custom message
 def pause(message):
     programPause = raw_input(message)
 
-#   Read CSV file and store in multidimensional array
 def loadCSV(filename):
     print("Reading " + filename + "...")
     columns = []
@@ -65,6 +63,48 @@ def combineDictionaries(arrayOfDictionaries):
 
     return resultDictionary
 
+def countSales(londonData):
+    londonBoroughs = {}
+
+    #   Populate keys of londonBoroughs
+    for borough in londonData["borough_name"]:
+        if (not (borough in londonBoroughs)) and len(borough) > 1:
+            londonBoroughs.update({ borough: 0 })
+
+    #   Count number of sales for each borough
+    for saleLocation in londonData["borough_name"]:
+        if len(saleLocation) > 1:
+            londonBoroughs[saleLocation] = londonBoroughs[saleLocation] + 1
+
+    return londonBoroughs
+
+def countSalesOverTime(londonData):
+    londonBoroughs = {}
+
+    #   Populate keys of londonBoroughs
+    for borough in londonData["borough_name"]:
+        if (not (borough in londonBoroughs)) and len(borough) > 1:
+            londonBoroughs.update({ borough: {} })
+
+    #   Add sub-keys to londonBoroughs
+    for borough in londonBoroughs:
+        for year in londonData["year"]:
+            if not (year in londonBoroughs[borough]):
+                londonBoroughs[borough].update({ year: [] })
+
+    #   Populate sub-arrays of prices
+    for index, borough in enumerate(londonData["borough_name"]):
+        if borough in londonBoroughs:
+            londonBoroughs[borough][londonData["year"][index]].append(int(londonData["price"][index]))
+
+    #   Calculate count for each sub-array
+    for borough in londonBoroughs:
+        for year in londonBoroughs[borough]:
+            sumValue = sum(londonBoroughs[borough][year])
+            londonBoroughs[borough][year] = len(londonBoroughs[borough][year])
+
+    return londonBoroughs
+
 def meanPriceVsLondonDataAttribute(londonData, attribute):
     salesData = {}
     result = {}
@@ -114,8 +154,12 @@ def medianPriceVsLondonDataAttribute(londonData, attribute):
 
     return result
 
-def getMinOrMaxPricePerYear(londonData, londonBoroughs, getMaximum = False):
+def getMinOrMaxPerYear(londonData, londonBoroughs, getMaximum = False, formatCurrency = False):
     prices = {}
+    outline = "{}: {}"
+
+    if formatCurrency:
+        outline = "{}: {:00,.2f} GBP"
 
     #   Populate keys of prices
     for year in londonData["year"]:
@@ -136,7 +180,7 @@ def getMinOrMaxPricePerYear(londonData, londonBoroughs, getMaximum = False):
                 if (current < currentBest and current > 0) or currentBest == None:
                     currentBest = current
                     currentBestBorough = borough
-        prices[currentYear] = "{}: {:00,.2f} GBP".format(currentBestBorough, currentBest)
+        prices[currentYear] = outline.format(currentBestBorough, currentBest)
         currentBest = None
         currentBestBorough = ""
 
@@ -233,6 +277,29 @@ def main():
         if year < minYear or minYear == None:
             minYear = year
 
+    #   Count the number of cumulative sales
+    print("\nCounting the total number of property sales between {} and {}").format(minYear, maxYear)
+    cumulativeSales = countSales(londonData)
+    for key, value in sorted(cumulativeSales.iteritems(), key=lambda (k,v): (v,k)):
+        print ("{} {}".format(key, "\t{}".format(value))).expandtabs(30)
+
+    #   Count the number of sales over time
+    print("\nCounting the total number of property sales between across time and boroughs").format(minYear, maxYear)
+    boroughSaleCount = countSalesOverTime(londonData)
+    maxSalesCount = getMinOrMaxPerYear(londonData, boroughSaleCount, True, False)
+    minSalesCount = getMinOrMaxPerYear(londonData, boroughSaleCount, False, False)
+    for key in sorted(maxSalesCount):
+        print("{}:\tMost number of sales: {}. \n\tLeast number of sales: {}.\n").format(key, maxSalesCount[key], minSalesCount[key])
+
+    #   Output number of sales per borough to file
+    output = "Borough\t| Year | Number Of Sales\n\n".expandtabs(25)
+    for borough in boroughSaleCount:
+        for key, value in sorted(boroughSaleCount[borough].iteritems()):
+            output = output + "{}\t| {} | {}\n".format(borough, key, boroughSaleCount[borough][key]).expandtabs(25)
+    text_file = open("Output/London_Borough_Sales.txt", "w")
+    text_file.write(output)
+    text_file.close()
+
     #   Calculate average price over time
     print("\nCalculating average property price changes over time")
     meanPricePerYear = meanPriceVsLondonDataAttribute(londonData, "year")
@@ -262,17 +329,17 @@ def main():
     #   Calculate price changes over time in London boroughs
     print("\nCalculating average property price changes over time in London boroughs")
     pricePerBoroughOverTime = calculatePricePerBoroughOverTime(londonData)
-    maxPropertyPrices = getMinOrMaxPricePerYear(londonData, pricePerBoroughOverTime, True)
-    minPropertyPrices = getMinOrMaxPricePerYear(londonData, pricePerBoroughOverTime, False)
+    maxPropertyPrices = getMinOrMaxPerYear(londonData, pricePerBoroughOverTime, True, True)
+    minPropertyPrices = getMinOrMaxPerYear(londonData, pricePerBoroughOverTime, False, True)
     for key in sorted(maxPropertyPrices):
         print("{}:\tMost expensive borough: {}. \n\tLeast expensive borough: {}.\n").format(key, maxPropertyPrices[key], minPropertyPrices[key])
 
     #   Output borough statistics to file
     output = "Borough\t| Year | Average Price\n\n".expandtabs(25)
     for borough in pricePerBoroughOverTime:
-        for key, value in sorted(pricePerBoroughOverTime[borough].iteritems(), key=lambda (k,v): (v,k)):
+        for key, value in sorted(pricePerBoroughOverTime[borough].iteritems()):
             output = output + "{}\t| {} | {:00,.2f}\n".format(borough, key, pricePerBoroughOverTime[borough][key]).expandtabs(25)
-    text_file = open("Output/London_Borough_Statistics.txt", "w")
+    text_file = open("Output/London_Borough_Prices.txt", "w")
     text_file.write(output)
     text_file.close()
 
@@ -289,6 +356,14 @@ def main():
     yearByYearPercentageChange = calculateYearByYearPercentageChange(londonData, meanPricePerYear)
     for years in sorted(yearByYearPercentageChange):
         print("{}\t{}%").format(years, round(yearByYearPercentageChange[years], 2)).expandtabs(30)
+
+    #   Calculate average percentage change year by year
+    sumValue = 0
+    for year in yearByYearPercentageChange:
+        sumValue = yearByYearPercentageChange[year] + sumValue
+    averageChangeYearByYear = sumValue / len(yearByYearPercentageChange)
+    print("Average percentage change:\t{}%").format(round(averageChangeYearByYear), 2).expandtabs(30)
+
     pause("\nPress the enter key to continue...")
 
 #   Program entry point

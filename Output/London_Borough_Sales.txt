@@ -1,0 +1,682 @@
+Borough                  | Year | Number Of Sales
+
+Barking and Dagenham     | 1995 | 660
+Barking and Dagenham     | 1996 | 884
+Barking and Dagenham     | 1997 | 1451
+Barking and Dagenham     | 1998 | 1921
+Barking and Dagenham     | 1999 | 2261
+Barking and Dagenham     | 2000 | 2595
+Barking and Dagenham     | 2001 | 3091
+Barking and Dagenham     | 2002 | 3421
+Barking and Dagenham     | 2003 | 3625
+Barking and Dagenham     | 2004 | 3644
+Barking and Dagenham     | 2005 | 2892
+Barking and Dagenham     | 2006 | 3665
+Barking and Dagenham     | 2007 | 3993
+Barking and Dagenham     | 2008 | 1696
+Barking and Dagenham     | 2009 | 1257
+Barking and Dagenham     | 2010 | 1446
+Barking and Dagenham     | 2011 | 1458
+Barking and Dagenham     | 2012 | 1315
+Barking and Dagenham     | 2013 | 1769
+Barking and Dagenham     | 2014 | 2098
+Kingston upon Thames     | 1995 | 2652
+Kingston upon Thames     | 1996 | 3172
+Kingston upon Thames     | 1997 | 3889
+Kingston upon Thames     | 1998 | 3477
+Kingston upon Thames     | 1999 | 4052
+Kingston upon Thames     | 2000 | 3533
+Kingston upon Thames     | 2001 | 3933
+Kingston upon Thames     | 2002 | 4269
+Kingston upon Thames     | 2003 | 3554
+Kingston upon Thames     | 2004 | 3926
+Kingston upon Thames     | 2005 | 3214
+Kingston upon Thames     | 2006 | 4235
+Kingston upon Thames     | 2007 | 3908
+Kingston upon Thames     | 2008 | 1697
+Kingston upon Thames     | 2009 | 1877
+Kingston upon Thames     | 2010 | 2329
+Kingston upon Thames     | 2011 | 2230
+Kingston upon Thames     | 2012 | 2298
+Kingston upon Thames     | 2013 | 2763
+Kingston upon Thames     | 2014 | 2979
+Lambeth                  | 1995 | 2520
+Lambeth                  | 1996 | 3718
+Lambeth                  | 1997 | 4912
+Lambeth                  | 1998 | 5174
+Lambeth                  | 1999 | 5776
+Lambeth                  | 2000 | 5825
+Lambeth                  | 2001 | 5889
+Lambeth                  | 2002 | 6325
+Lambeth                  | 2003 | 5479
+Lambeth                  | 2004 | 6011
+Lambeth                  | 2005 | 5230
+Lambeth                  | 2006 | 6660
+Lambeth                  | 2007 | 6335
+Lambeth                  | 2008 | 2978
+Lambeth                  | 2009 | 2363
+Lambeth                  | 2010 | 3497
+Lambeth                  | 2011 | 3580
+Lambeth                  | 2012 | 3873
+Lambeth                  | 2013 | 4939
+Lambeth                  | 2014 | 4827
+Southwark                | 1995 | 1938
+Southwark                | 1996 | 2306
+Southwark                | 1997 | 3569
+Southwark                | 1998 | 3940
+Southwark                | 1999 | 4915
+Southwark                | 2000 | 4913
+Southwark                | 2001 | 5197
+Southwark                | 2002 | 5075
+Southwark                | 2003 | 4653
+Southwark                | 2004 | 5381
+Southwark                | 2005 | 4499
+Southwark                | 2006 | 5587
+Southwark                | 2007 | 5229
+Southwark                | 2008 | 2510
+Southwark                | 2009 | 2319
+Southwark                | 2010 | 3313
+Southwark                | 2011 | 3173
+Southwark                | 2012 | 3308
+Southwark                | 2013 | 4286
+Southwark                | 2014 | 3844
+Kensington and Chelsea   | 1995 | 3299
+Kensington and Chelsea   | 1996 | 4223
+Kensington and Chelsea   | 1997 | 4652
+Kensington and Chelsea   | 1998 | 4071
+Kensington and Chelsea   | 1999 | 5060
+Kensington and Chelsea   | 2000 | 4348
+Kensington and Chelsea   | 2001 | 3996
+Kensington and Chelsea   | 2002 | 4449
+Kensington and Chelsea   | 2003 | 3459
+Kensington and Chelsea   | 2004 | 4021
+Kensington and Chelsea   | 2005 | 3365
+Kensington and Chelsea   | 2006 | 4224
+Kensington and Chelsea   | 2007 | 3700
+Kensington and Chelsea   | 2008 | 1701
+Kensington and Chelsea   | 2009 | 2018
+Kensington and Chelsea   | 2010 | 2416
+Kensington and Chelsea   | 2011 | 2457
+Kensington and Chelsea   | 2012 | 2185
+Kensington and Chelsea   | 2013 | 2673
+Kensington and Chelsea   | 2014 | 2645
+Greenwich                | 1995 | 1776
+Greenwich                | 1996 | 2121
+Greenwich                | 1997 | 2567
+Greenwich                | 1998 | 2932
+Greenwich                | 1999 | 3974
+Greenwich                | 2000 | 3683
+Greenwich                | 2001 | 4670
+Greenwich                | 2002 | 5363
+Greenwich                | 2003 | 4961
+Greenwich                | 2004 | 5674
+Greenwich                | 2005 | 4703
+Greenwich                | 2006 | 5262
+Greenwich                | 2007 | 5184
+Greenwich                | 2008 | 2414
+Greenwich                | 2009 | 1952
+Greenwich                | 2010 | 2225
+Greenwich                | 2011 | 2560
+Greenwich                | 2012 | 2769
+Greenwich                | 2013 | 3531
+Greenwich                | 2014 | 4405
+Hounslow                 | 1995 | 2936
+Hounslow                 | 1996 | 3266
+Hounslow                 | 1997 | 4026
+Hounslow                 | 1998 | 3290
+Hounslow                 | 1999 | 4180
+Hounslow                 | 2000 | 4023
+Hounslow                 | 2001 | 4461
+Hounslow                 | 2002 | 4869
+Hounslow                 | 2003 | 4556
+Hounslow                 | 2004 | 4661
+Hounslow                 | 2005 | 3631
+Hounslow                 | 2006 | 4775
+Hounslow                 | 2007 | 4801
+Hounslow                 | 2008 | 2320
+Hounslow                 | 2009 | 1816
+Hounslow                 | 2010 | 2444
+Hounslow                 | 2011 | 2279
+Hounslow                 | 2012 | 2309
+Hounslow                 | 2013 | 2858
+Hounslow                 | 2014 | 3189
+Lewisham                 | 1995 | 1965
+Lewisham                 | 1996 | 2589
+Lewisham                 | 1997 | 3663
+Lewisham                 | 1998 | 3930
+Lewisham                 | 1999 | 5071
+Lewisham                 | 2000 | 5261
+Lewisham                 | 2001 | 5527
+Lewisham                 | 2002 | 6131
+Lewisham                 | 2003 | 5588
+Lewisham                 | 2004 | 5965
+Lewisham                 | 2005 | 4784
+Lewisham                 | 2006 | 5990
+Lewisham                 | 2007 | 6059
+Lewisham                 | 2008 | 2591
+Lewisham                 | 2009 | 2100
+Lewisham                 | 2010 | 2792
+Lewisham                 | 2011 | 2853
+Lewisham                 | 2012 | 3233
+Lewisham                 | 2013 | 4211
+Lewisham                 | 2014 | 4448
+Havering                 | 1995 | 2496
+Havering                 | 1996 | 3073
+Havering                 | 1997 | 3566
+Havering                 | 1998 | 3353
+Havering                 | 1999 | 4102
+Havering                 | 2000 | 3647
+Havering                 | 2001 | 4597
+Havering                 | 2002 | 4878
+Havering                 | 2003 | 4515
+Havering                 | 2004 | 4866
+Havering                 | 2005 | 3965
+Havering                 | 2006 | 5087
+Havering                 | 2007 | 5404
+Havering                 | 2008 | 2626
+Havering                 | 2009 | 2400
+Havering                 | 2010 | 2714
+Havering                 | 2011 | 2579
+Havering                 | 2012 | 2772
+Havering                 | 2013 | 3559
+Havering                 | 2014 | 4129
+Islington                | 1995 | 1572
+Islington                | 1996 | 2207
+Islington                | 1997 | 2953
+Islington                | 1998 | 3094
+Islington                | 1999 | 3723
+Islington                | 2000 | 2937
+Islington                | 2001 | 3281
+Islington                | 2002 | 3355
+Islington                | 2003 | 2844
+Islington                | 2004 | 3027
+Islington                | 2005 | 3042
+Islington                | 2006 | 4000
+Islington                | 2007 | 3734
+Islington                | 2008 | 2301
+Islington                | 2009 | 2366
+Islington                | 2010 | 2803
+Islington                | 2011 | 2553
+Islington                | 2012 | 2782
+Islington                | 2013 | 3013
+Islington                | 2014 | 2779
+Barnet                   | 1995 | 4047
+Barnet                   | 1996 | 5367
+Barnet                   | 1997 | 6282
+Barnet                   | 1998 | 6072
+Barnet                   | 1999 | 7419
+Barnet                   | 2000 | 6559
+Barnet                   | 2001 | 6857
+Barnet                   | 2002 | 7348
+Barnet                   | 2003 | 6282
+Barnet                   | 2004 | 6785
+Barnet                   | 2005 | 5436
+Barnet                   | 2006 | 6785
+Barnet                   | 2007 | 6909
+Barnet                   | 2008 | 3468
+Barnet                   | 2009 | 3183
+Barnet                   | 2010 | 4154
+Barnet                   | 2011 | 3887
+Barnet                   | 2012 | 3969
+Barnet                   | 2013 | 4770
+Barnet                   | 2014 | 4889
+Waltham Forest           | 1995 | 1922
+Waltham Forest           | 1996 | 2403
+Waltham Forest           | 1997 | 3196
+Waltham Forest           | 1998 | 3766
+Waltham Forest           | 1999 | 4749
+Waltham Forest           | 2000 | 4843
+Waltham Forest           | 2001 | 5254
+Waltham Forest           | 2002 | 5335
+Waltham Forest           | 2003 | 5009
+Waltham Forest           | 2004 | 4806
+Waltham Forest           | 2005 | 4313
+Waltham Forest           | 2006 | 5038
+Waltham Forest           | 2007 | 4877
+Waltham Forest           | 2008 | 2434
+Waltham Forest           | 2009 | 1979
+Waltham Forest           | 2010 | 2244
+Waltham Forest           | 2011 | 2305
+Waltham Forest           | 2012 | 2275
+Waltham Forest           | 2013 | 2891
+Waltham Forest           | 2014 | 3448
+Hillingdon               | 1995 | 2839
+Hillingdon               | 1996 | 3890
+Hillingdon               | 1997 | 4324
+Hillingdon               | 1998 | 4454
+Hillingdon               | 1999 | 5718
+Hillingdon               | 2000 | 5017
+Hillingdon               | 2001 | 4669
+Hillingdon               | 2002 | 5725
+Hillingdon               | 2003 | 5559
+Hillingdon               | 2004 | 5594
+Hillingdon               | 2005 | 4478
+Hillingdon               | 2006 | 5449
+Hillingdon               | 2007 | 5454
+Hillingdon               | 2008 | 3066
+Hillingdon               | 2009 | 2566
+Hillingdon               | 2010 | 3069
+Hillingdon               | 2011 | 3298
+Hillingdon               | 2012 | 3199
+Hillingdon               | 2013 | 3356
+Hillingdon               | 2014 | 3671
+Tower Hamlets            | 1995 | 1611
+Tower Hamlets            | 1996 | 1984
+Tower Hamlets            | 1997 | 3290
+Tower Hamlets            | 1998 | 4194
+Tower Hamlets            | 1999 | 5393
+Tower Hamlets            | 2000 | 5024
+Tower Hamlets            | 2001 | 4927
+Tower Hamlets            | 2002 | 4721
+Tower Hamlets            | 2003 | 4142
+Tower Hamlets            | 2004 | 5834
+Tower Hamlets            | 2005 | 4822
+Tower Hamlets            | 2006 | 5336
+Tower Hamlets            | 2007 | 5430
+Tower Hamlets            | 2008 | 2557
+Tower Hamlets            | 2009 | 2966
+Tower Hamlets            | 2010 | 3759
+Tower Hamlets            | 2011 | 3342
+Tower Hamlets            | 2012 | 3496
+Tower Hamlets            | 2013 | 4409
+Tower Hamlets            | 2014 | 4968
+Bexley                   | 1995 | 2415
+Bexley                   | 1996 | 2935
+Bexley                   | 1997 | 3734
+Bexley                   | 1998 | 3618
+Bexley                   | 1999 | 4561
+Bexley                   | 2000 | 4188
+Bexley                   | 2001 | 5177
+Bexley                   | 2002 | 5704
+Bexley                   | 2003 | 5217
+Bexley                   | 2004 | 5098
+Bexley                   | 2005 | 4053
+Bexley                   | 2006 | 4999
+Bexley                   | 2007 | 5013
+Bexley                   | 2008 | 2499
+Bexley                   | 2009 | 2173
+Bexley                   | 2010 | 2459
+Bexley                   | 2011 | 2540
+Bexley                   | 2012 | 2813
+Bexley                   | 2013 | 3377
+Bexley                   | 2014 | 3860
+Enfield                  | 1995 | 3539
+Enfield                  | 1996 | 4303
+Enfield                  | 1997 | 5155
+Enfield                  | 1998 | 5396
+Enfield                  | 1999 | 6054
+Enfield                  | 2000 | 5497
+Enfield                  | 2001 | 6975
+Enfield                  | 2002 | 7207
+Enfield                  | 2003 | 6343
+Enfield                  | 2004 | 6260
+Enfield                  | 2005 | 5074
+Enfield                  | 2006 | 6335
+Enfield                  | 2007 | 6435
+Enfield                  | 2008 | 3099
+Enfield                  | 2009 | 2540
+Enfield                  | 2010 | 2874
+Enfield                  | 2011 | 2709
+Enfield                  | 2012 | 2749
+Enfield                  | 2013 | 3410
+Enfield                  | 2014 | 3678
+Hammersmith and Fulham   | 1995 | 2718
+Hammersmith and Fulham   | 1996 | 3690
+Hammersmith and Fulham   | 1997 | 3978
+Hammersmith and Fulham   | 1998 | 3422
+Hammersmith and Fulham   | 1999 | 4201
+Hammersmith and Fulham   | 2000 | 3553
+Hammersmith and Fulham   | 2001 | 3613
+Hammersmith and Fulham   | 2002 | 4000
+Hammersmith and Fulham   | 2003 | 3353
+Hammersmith and Fulham   | 2004 | 3709
+Hammersmith and Fulham   | 2005 | 3176
+Hammersmith and Fulham   | 2006 | 4106
+Hammersmith and Fulham   | 2007 | 3793
+Hammersmith and Fulham   | 2008 | 1634
+Hammersmith and Fulham   | 2009 | 1911
+Hammersmith and Fulham   | 2010 | 2457
+Hammersmith and Fulham   | 2011 | 2687
+Hammersmith and Fulham   | 2012 | 2550
+Hammersmith and Fulham   | 2013 | 3024
+Hammersmith and Fulham   | 2014 | 2801
+Ealing                   | 1995 | 3376
+Ealing                   | 1996 | 4411
+Ealing                   | 1997 | 5322
+Ealing                   | 1998 | 5230
+Ealing                   | 1999 | 6172
+Ealing                   | 2000 | 5284
+Ealing                   | 2001 | 6078
+Ealing                   | 2002 | 6242
+Ealing                   | 2003 | 5830
+Ealing                   | 2004 | 6098
+Ealing                   | 2005 | 4909
+Ealing                   | 2006 | 6519
+Ealing                   | 2007 | 6200
+Ealing                   | 2008 | 2755
+Ealing                   | 2009 | 2372
+Ealing                   | 2010 | 3179
+Ealing                   | 2011 | 2999
+Ealing                   | 2012 | 3186
+Ealing                   | 2013 | 3837
+Ealing                   | 2014 | 3363
+Sutton                   | 1995 | 2584
+Sutton                   | 1996 | 3257
+Sutton                   | 1997 | 3771
+Sutton                   | 1998 | 4078
+Sutton                   | 1999 | 4827
+Sutton                   | 2000 | 4337
+Sutton                   | 2001 | 4836
+Sutton                   | 2002 | 5016
+Sutton                   | 2003 | 4507
+Sutton                   | 2004 | 4722
+Sutton                   | 2005 | 3825
+Sutton                   | 2006 | 4805
+Sutton                   | 2007 | 4714
+Sutton                   | 2008 | 2389
+Sutton                   | 2009 | 2398
+Sutton                   | 2010 | 2357
+Sutton                   | 2011 | 2434
+Sutton                   | 2012 | 2523
+Sutton                   | 2013 | 3023
+Sutton                   | 2014 | 3368
+Bromley                  | 1995 | 3976
+Bromley                  | 1996 | 5408
+Bromley                  | 1997 | 6305
+Bromley                  | 1998 | 5645
+Bromley                  | 1999 | 6900
+Bromley                  | 2000 | 6499
+Bromley                  | 2001 | 7523
+Bromley                  | 2002 | 8083
+Bromley                  | 2003 | 6946
+Bromley                  | 2004 | 7596
+Bromley                  | 2005 | 6363
+Bromley                  | 2006 | 8432
+Bromley                  | 2007 | 8028
+Bromley                  | 2008 | 3770
+Bromley                  | 2009 | 3914
+Bromley                  | 2010 | 4368
+Bromley                  | 2011 | 4316
+Bromley                  | 2012 | 4751
+Bromley                  | 2013 | 5494
+Bromley                  | 2014 | 6035
+Croydon                  | 1995 | 3456
+Croydon                  | 1996 | 4691
+Croydon                  | 1997 | 5715
+Croydon                  | 1998 | 6179
+Croydon                  | 1999 | 7240
+Croydon                  | 2000 | 5938
+Croydon                  | 2001 | 6872
+Croydon                  | 2002 | 8530
+Croydon                  | 2003 | 7596
+Croydon                  | 2004 | 7700
+Croydon                  | 2005 | 6288
+Croydon                  | 2006 | 8094
+Croydon                  | 2007 | 8209
+Croydon                  | 2008 | 3867
+Croydon                  | 2009 | 3356
+Croydon                  | 2010 | 3599
+Croydon                  | 2011 | 3479
+Croydon                  | 2012 | 3557
+Croydon                  | 2013 | 4846
+Croydon                  | 2014 | 5805
+City of Westminster      | 1995 | 3733
+City of Westminster      | 1996 | 4575
+City of Westminster      | 1997 | 6255
+City of Westminster      | 1998 | 5354
+City of Westminster      | 1999 | 6638
+City of Westminster      | 2000 | 6233
+City of Westminster      | 2001 | 5787
+City of Westminster      | 2002 | 6323
+City of Westminster      | 2003 | 5133
+City of Westminster      | 2004 | 5164
+City of Westminster      | 2005 | 4930
+City of Westminster      | 2006 | 6269
+City of Westminster      | 2007 | 5370
+City of Westminster      | 2008 | 2769
+City of Westminster      | 2009 | 2855
+City of Westminster      | 2010 | 3563
+City of Westminster      | 2011 | 3255
+City of Westminster      | 2012 | 3167
+City of Westminster      | 2013 | 3650
+City of Westminster      | 2014 | 0
+City of London           | 1995 | 155
+City of London           | 1996 | 275
+City of London           | 1997 | 319
+City of London           | 1998 | 424
+City of London           | 1999 | 536
+City of London           | 2000 | 431
+City of London           | 2001 | 365
+City of London           | 2002 | 391
+City of London           | 2003 | 479
+City of London           | 2004 | 377
+City of London           | 2005 | 303
+City of London           | 2006 | 295
+City of London           | 2007 | 268
+City of London           | 2008 | 141
+City of London           | 2009 | 157
+City of London           | 2010 | 235
+City of London           | 2011 | 256
+City of London           | 2012 | 195
+City of London           | 2013 | 434
+City of London           | 2014 | 309
+Newham                   | 1995 | 1173
+Newham                   | 1996 | 1604
+Newham                   | 1997 | 2382
+Newham                   | 1998 | 2930
+Newham                   | 1999 | 3596
+Newham                   | 2000 | 4628
+Newham                   | 2001 | 5373
+Newham                   | 2002 | 5474
+Newham                   | 2003 | 5444
+Newham                   | 2004 | 4771
+Newham                   | 2005 | 3923
+Newham                   | 2006 | 4468
+Newham                   | 2007 | 4386
+Newham                   | 2008 | 2692
+Newham                   | 2009 | 1414
+Newham                   | 2010 | 1681
+Newham                   | 2011 | 1594
+Newham                   | 2012 | 1679
+Newham                   | 2013 | 2370
+Newham                   | 2014 | 2857
+Redbridge                | 1995 | 3081
+Redbridge                | 1996 | 3732
+Redbridge                | 1997 | 4213
+Redbridge                | 1998 | 4171
+Redbridge                | 1999 | 5140
+Redbridge                | 2000 | 4763
+Redbridge                | 2001 | 5669
+Redbridge                | 2002 | 6249
+Redbridge                | 2003 | 5729
+Redbridge                | 2004 | 5888
+Redbridge                | 2005 | 4902
+Redbridge                | 2006 | 5807
+Redbridge                | 2007 | 5435
+Redbridge                | 2008 | 3007
+Redbridge                | 2009 | 2538
+Redbridge                | 2010 | 2949
+Redbridge                | 2011 | 2526
+Redbridge                | 2012 | 2461
+Redbridge                | 2013 | 2975
+Redbridge                | 2014 | 3552
+Merton                   | 1995 | 2649
+Merton                   | 1996 | 3405
+Merton                   | 1997 | 3951
+Merton                   | 1998 | 4020
+Merton                   | 1999 | 4956
+Merton                   | 2000 | 4096
+Merton                   | 2001 | 4656
+Merton                   | 2002 | 4879
+Merton                   | 2003 | 4132
+Merton                   | 2004 | 4637
+Merton                   | 2005 | 3795
+Merton                   | 2006 | 4802
+Merton                   | 2007 | 4503
+Merton                   | 2008 | 2246
+Merton                   | 2009 | 2213
+Merton                   | 2010 | 2532
+Merton                   | 2011 | 2595
+Merton                   | 2012 | 2719
+Merton                   | 2013 | 3235
+Merton                   | 2014 | 3055
+Wandsworth               | 1995 | 4814
+Wandsworth               | 1996 | 6378
+Wandsworth               | 1997 | 7643
+Wandsworth               | 1998 | 7236
+Wandsworth               | 1999 | 9357
+Wandsworth               | 2000 | 7516
+Wandsworth               | 2001 | 8154
+Wandsworth               | 2002 | 8568
+Wandsworth               | 2003 | 7209
+Wandsworth               | 2004 | 8519
+Wandsworth               | 2005 | 7403
+Wandsworth               | 2006 | 9401
+Wandsworth               | 2007 | 8467
+Wandsworth               | 2008 | 3967
+Wandsworth               | 2009 | 4397
+Wandsworth               | 2010 | 5310
+Wandsworth               | 2011 | 5258
+Wandsworth               | 2012 | 5198
+Wandsworth               | 2013 | 6283
+Wandsworth               | 2014 | 5901
+Camden                   | 1995 | 2540
+Camden                   | 1996 | 3401
+Camden                   | 1997 | 3885
+Camden                   | 1998 | 3550
+Camden                   | 1999 | 4020
+Camden                   | 2000 | 3520
+Camden                   | 2001 | 3651
+Camden                   | 2002 | 3913
+Camden                   | 2003 | 3190
+Camden                   | 2004 | 3792
+Camden                   | 2005 | 3355
+Camden                   | 2006 | 4169
+Camden                   | 2007 | 3666
+Camden                   | 2008 | 2074
+Camden                   | 2009 | 2186
+Camden                   | 2010 | 2740
+Camden                   | 2011 | 2626
+Camden                   | 2012 | 2362
+Camden                   | 2013 | 2952
+Camden                   | 2014 | 2704
+Hackney                  | 1995 | 1168
+Hackney                  | 1996 | 1466
+Hackney                  | 1997 | 2292
+Hackney                  | 1998 | 2581
+Hackney                  | 1999 | 2959
+Hackney                  | 2000 | 2702
+Hackney                  | 2001 | 3288
+Hackney                  | 2002 | 3635
+Hackney                  | 2003 | 2805
+Hackney                  | 2004 | 3370
+Hackney                  | 2005 | 2564
+Hackney                  | 2006 | 3433
+Hackney                  | 2007 | 3600
+Hackney                  | 2008 | 1713
+Hackney                  | 2009 | 1857
+Hackney                  | 2010 | 2200
+Hackney                  | 2011 | 2208
+Hackney                  | 2012 | 2529
+Hackney                  | 2013 | 2731
+Hackney                  | 2014 | 2821
+Richmond upon Thames     | 1995 | 3298
+Richmond upon Thames     | 1996 | 4737
+Richmond upon Thames     | 1997 | 5148
+Richmond upon Thames     | 1998 | 4773
+Richmond upon Thames     | 1999 | 5903
+Richmond upon Thames     | 2000 | 4010
+Richmond upon Thames     | 2001 | 4694
+Richmond upon Thames     | 2002 | 5237
+Richmond upon Thames     | 2003 | 4572
+Richmond upon Thames     | 2004 | 4955
+Richmond upon Thames     | 2005 | 4277
+Richmond upon Thames     | 2006 | 5367
+Richmond upon Thames     | 2007 | 4649
+Richmond upon Thames     | 2008 | 2397
+Richmond upon Thames     | 2009 | 2581
+Richmond upon Thames     | 2010 | 3182
+Richmond upon Thames     | 2011 | 3113
+Richmond upon Thames     | 2012 | 3209
+Richmond upon Thames     | 2013 | 3621
+Richmond upon Thames     | 2014 | 3400
+Westminster              | 1995 | 0
+Westminster              | 1996 | 0
+Westminster              | 1997 | 0
+Westminster              | 1998 | 0
+Westminster              | 1999 | 0
+Westminster              | 2000 | 0
+Westminster              | 2001 | 0
+Westminster              | 2002 | 0
+Westminster              | 2003 | 0
+Westminster              | 2004 | 0
+Westminster              | 2005 | 0
+Westminster              | 2006 | 0
+Westminster              | 2007 | 0
+Westminster              | 2008 | 0
+Westminster              | 2009 | 0
+Westminster              | 2010 | 0
+Westminster              | 2011 | 0
+Westminster              | 2012 | 0
+Westminster              | 2013 | 0
+Westminster              | 2014 | 3494
+Haringey                 | 1995 | 2514
+Haringey                 | 1996 | 3052
+Haringey                 | 1997 | 3818
+Haringey                 | 1998 | 3743
+Haringey                 | 1999 | 4493
+Haringey                 | 2000 | 4055
+Haringey                 | 2001 | 4478
+Haringey                 | 2002 | 4569
+Haringey                 | 2003 | 3876
+Haringey                 | 2004 | 4403
+Haringey                 | 2005 | 3496
+Haringey                 | 2006 | 4643
+Haringey                 | 2007 | 4314
+Haringey                 | 2008 | 2005
+Haringey                 | 2009 | 1843
+Haringey                 | 2010 | 2328
+Haringey                 | 2011 | 2255
+Haringey                 | 2012 | 2397
+Haringey                 | 2013 | 2658
+Haringey                 | 2014 | 2838
+Harrow                   | 1995 | 2450
+Harrow                   | 1996 | 3151
+Harrow                   | 1997 | 3591
+Harrow                   | 1998 | 3663
+Harrow                   | 1999 | 4386
+Harrow                   | 2000 | 3922
+Harrow                   | 2001 | 4309
+Harrow                   | 2002 | 4499
+Harrow                   | 2003 | 4224
+Harrow                   | 2004 | 4034
+Harrow                   | 2005 | 3294
+Harrow                   | 2006 | 4320
+Harrow                   | 2007 | 4009
+Harrow                   | 2008 | 2185
+Harrow                   | 2009 | 1930
+Harrow                   | 2010 | 2244
+Harrow                   | 2011 | 2133
+Harrow                   | 2012 | 2220
+Harrow                   | 2013 | 2572
+Harrow                   | 2014 | 2699
+Brent                    | 1995 | 2631
+Brent                    | 1996 | 3035
+Brent                    | 1997 | 3729
+Brent                    | 1998 | 4067
+Brent                    | 1999 | 4550
+Brent                    | 2000 | 4424
+Brent                    | 2001 | 4763
+Brent                    | 2002 | 4847
+Brent                    | 2003 | 4274
+Brent                    | 2004 | 4133
+Brent                    | 2005 | 3306
+Brent                    | 2006 | 3962
+Brent                    | 2007 | 4315
+Brent                    | 2008 | 2084
+Brent                    | 2009 | 1568
+Brent                    | 2010 | 2390
+Brent                    | 2011 | 2188
+Brent                    | 2012 | 2017
+Brent                    | 2013 | 2470
+Brent                    | 2014 | 2833

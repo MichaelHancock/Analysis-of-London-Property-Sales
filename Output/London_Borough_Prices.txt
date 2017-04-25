@@ -10,15 +10,15 @@ Barking and Dagenham     | 2001 | 96,195.00
 Barking and Dagenham     | 2002 | 119,537.00
 Barking and Dagenham     | 2003 | 145,931.00
 Barking and Dagenham     | 2004 | 163,713.00
-Barking and Dagenham     | 2009 | 166,317.00
 Barking and Dagenham     | 2005 | 169,737.00
 Barking and Dagenham     | 2006 | 174,864.00
+Barking and Dagenham     | 2007 | 192,579.00
+Barking and Dagenham     | 2008 | 196,717.00
+Barking and Dagenham     | 2009 | 166,317.00
 Barking and Dagenham     | 2010 | 178,906.00
 Barking and Dagenham     | 2011 | 180,263.00
 Barking and Dagenham     | 2012 | 181,866.00
 Barking and Dagenham     | 2013 | 187,472.00
-Barking and Dagenham     | 2007 | 192,579.00
-Barking and Dagenham     | 2008 | 196,717.00
 Barking and Dagenham     | 2014 | 215,102.00
 Kingston upon Thames     | 1995 | 102,213.00
 Kingston upon Thames     | 1996 | 111,167.00
@@ -32,11 +32,11 @@ Kingston upon Thames     | 2003 | 244,306.00
 Kingston upon Thames     | 2004 | 266,891.00
 Kingston upon Thames     | 2005 | 277,698.00
 Kingston upon Thames     | 2006 | 303,085.00
-Kingston upon Thames     | 2009 | 328,781.00
 Kingston upon Thames     | 2007 | 347,130.00
 Kingston upon Thames     | 2008 | 356,682.00
-Kingston upon Thames     | 2011 | 364,110.00
+Kingston upon Thames     | 2009 | 328,781.00
 Kingston upon Thames     | 2010 | 373,427.00
+Kingston upon Thames     | 2011 | 364,110.00
 Kingston upon Thames     | 2012 | 385,351.00
 Kingston upon Thames     | 2013 | 413,779.00
 Kingston upon Thames     | 2014 | 475,360.00
@@ -52,9 +52,9 @@ Lambeth                  | 2003 | 238,743.00
 Lambeth                  | 2004 | 253,971.00
 Lambeth                  | 2005 | 268,959.00
 Lambeth                  | 2006 | 293,245.00
-Lambeth                  | 2009 | 334,686.00
 Lambeth                  | 2007 | 340,190.00
 Lambeth                  | 2008 | 342,679.00
+Lambeth                  | 2009 | 334,686.00
 Lambeth                  | 2010 | 365,137.00
 Lambeth                  | 2011 | 377,007.00
 Lambeth                  | 2012 | 397,360.00
@@ -72,8 +72,8 @@ Southwark                | 2003 | 240,485.00
 Southwark                | 2004 | 252,499.00
 Southwark                | 2005 | 273,461.00
 Southwark                | 2006 | 289,191.00
-Southwark                | 2008 | 327,693.00
 Southwark                | 2007 | 332,588.00
+Southwark                | 2008 | 327,693.00
 Southwark                | 2009 | 335,775.00
 Southwark                | 2010 | 374,460.00
 Southwark                | 2011 | 399,412.00
@@ -93,8 +93,8 @@ Kensington and Chelsea   | 2004 | 712,578.00
 Kensington and Chelsea   | 2005 | 757,087.00
 Kensington and Chelsea   | 2006 | 878,320.00
 Kensington and Chelsea   | 2007 | 1,030,321.00
-Kensington and Chelsea   | 2009 | 1,038,524.00
 Kensington and Chelsea   | 2008 | 1,187,310.00
+Kensington and Chelsea   | 2009 | 1,038,524.00
 Kensington and Chelsea   | 2010 | 1,247,825.00
 Kensington and Chelsea   | 2011 | 1,287,522.00
 Kensington and Chelsea   | 2012 | 1,527,450.00
@@ -113,11 +113,11 @@ Greenwich                | 2004 | 208,164.00
 Greenwich                | 2005 | 225,141.00
 Greenwich                | 2006 | 237,571.00
 Greenwich                | 2007 | 260,499.00
-Greenwich                | 2009 | 264,527.00
 Greenwich                | 2008 | 266,327.00
-Greenwich                | 2012 | 292,316.00
+Greenwich                | 2009 | 264,527.00
 Greenwich                | 2010 | 295,323.00
 Greenwich                | 2011 | 295,721.00
+Greenwich                | 2012 | 292,316.00
 Greenwich                | 2013 | 329,496.00
 Greenwich                | 2014 | 370,144.00
 Hounslow                 | 1995 | 98,025.00
@@ -136,12 +136,12 @@ Hounslow                 | 2007 | 311,434.00
 Hounslow                 | 2008 | 313,144.00
 Hounslow                 | 2009 | 314,256.00
 Hounslow                 | 2010 | 340,825.00
-Hounslow                 | 2012 | 353,732.00
 Hounslow                 | 2011 | 360,928.00
+Hounslow                 | 2012 | 353,732.00
 Hounslow                 | 2013 | 396,515.00
 Hounslow                 | 2014 | 425,638.00
-Lewisham                 | 1996 | 78,119.00
 Lewisham                 | 1995 | 78,906.00
+Lewisham                 | 1996 | 78,119.00
 Lewisham                 | 1997 | 86,413.00
 Lewisham                 | 1998 | 93,560.00
 Lewisham                 | 1999 | 101,960.00
@@ -152,9 +152,9 @@ Lewisham                 | 2003 | 185,350.00
 Lewisham                 | 2004 | 198,248.00
 Lewisham                 | 2005 | 205,288.00
 Lewisham                 | 2006 | 223,279.00
-Lewisham                 | 2009 | 237,867.00
 Lewisham                 | 2007 | 247,886.00
 Lewisham                 | 2008 | 249,908.00
+Lewisham                 | 2009 | 237,867.00
 Lewisham                 | 2010 | 263,069.00
 Lewisham                 | 2011 | 266,486.00
 Lewisham                 | 2012 | 281,416.00
@@ -171,14 +171,14 @@ Havering                 | 2002 | 163,775.00
 Havering                 | 2003 | 192,002.00
 Havering                 | 2004 | 208,746.00
 Havering                 | 2005 | 219,731.00
-Havering                 | 2009 | 225,184.00
 Havering                 | 2006 | 227,966.00
-Havering                 | 2012 | 244,847.00
-Havering                 | 2008 | 245,416.00
 Havering                 | 2007 | 246,006.00
-Havering                 | 2011 | 249,310.00
-Havering                 | 2013 | 257,171.00
+Havering                 | 2008 | 245,416.00
+Havering                 | 2009 | 225,184.00
 Havering                 | 2010 | 257,197.00
+Havering                 | 2011 | 249,310.00
+Havering                 | 2012 | 244,847.00
+Havering                 | 2013 | 257,171.00
 Havering                 | 2014 | 283,955.00
 Islington                | 1995 | 128,965.00
 Islington                | 1996 | 132,011.00
@@ -192,16 +192,16 @@ Islington                | 2003 | 295,061.00
 Islington                | 2004 | 319,123.00
 Islington                | 2005 | 332,730.00
 Islington                | 2006 | 366,731.00
-Islington                | 2009 | 414,212.00
-Islington                | 2008 | 425,652.00
 Islington                | 2007 | 436,532.00
+Islington                | 2008 | 425,652.00
+Islington                | 2009 | 414,212.00
 Islington                | 2010 | 477,527.00
 Islington                | 2011 | 500,848.00
 Islington                | 2012 | 516,372.00
 Islington                | 2013 | 573,832.00
 Islington                | 2014 | 670,104.00
-Barnet                   | 1996 | 122,385.00
 Barnet                   | 1995 | 123,094.00
+Barnet                   | 1996 | 122,385.00
 Barnet                   | 1997 | 142,112.00
 Barnet                   | 1998 | 154,441.00
 Barnet                   | 1999 | 175,839.00
@@ -213,10 +213,10 @@ Barnet                   | 2004 | 306,399.00
 Barnet                   | 2005 | 318,561.00
 Barnet                   | 2006 | 340,781.00
 Barnet                   | 2007 | 380,400.00
-Barnet                   | 2009 | 380,830.00
 Barnet                   | 2008 | 386,619.00
-Barnet                   | 2011 | 434,376.00
+Barnet                   | 2009 | 380,830.00
 Barnet                   | 2010 | 440,203.00
+Barnet                   | 2011 | 434,376.00
 Barnet                   | 2012 | 445,325.00
 Barnet                   | 2013 | 479,436.00
 Barnet                   | 2014 | 534,447.00
@@ -232,11 +232,11 @@ Waltham Forest           | 2003 | 178,983.00
 Waltham Forest           | 2004 | 195,048.00
 Waltham Forest           | 2005 | 204,926.00
 Waltham Forest           | 2006 | 218,433.00
+Waltham Forest           | 2007 | 245,167.00
+Waltham Forest           | 2008 | 237,829.00
 Waltham Forest           | 2009 | 220,154.00
 Waltham Forest           | 2010 | 236,433.00
-Waltham Forest           | 2008 | 237,829.00
 Waltham Forest           | 2011 | 239,965.00
-Waltham Forest           | 2007 | 245,167.00
 Waltham Forest           | 2012 | 251,268.00
 Waltham Forest           | 2013 | 281,672.00
 Waltham Forest           | 2014 | 334,501.00
@@ -252,9 +252,9 @@ Hillingdon               | 2003 | 210,265.00
 Hillingdon               | 2004 | 223,595.00
 Hillingdon               | 2005 | 233,214.00
 Hillingdon               | 2006 | 252,552.00
-Hillingdon               | 2009 | 254,568.00
-Hillingdon               | 2008 | 268,125.00
 Hillingdon               | 2007 | 270,896.00
+Hillingdon               | 2008 | 268,125.00
+Hillingdon               | 2009 | 254,568.00
 Hillingdon               | 2010 | 281,980.00
 Hillingdon               | 2011 | 284,791.00
 Hillingdon               | 2012 | 293,913.00
@@ -272,11 +272,11 @@ Tower Hamlets            | 2003 | 237,972.00
 Tower Hamlets            | 2004 | 260,431.00
 Tower Hamlets            | 2005 | 265,067.00
 Tower Hamlets            | 2006 | 281,472.00
-Tower Hamlets            | 2008 | 328,468.00
 Tower Hamlets            | 2007 | 333,027.00
+Tower Hamlets            | 2008 | 328,468.00
 Tower Hamlets            | 2009 | 333,033.00
-Tower Hamlets            | 2011 | 341,607.00
 Tower Hamlets            | 2010 | 344,635.00
+Tower Hamlets            | 2011 | 341,607.00
 Tower Hamlets            | 2012 | 353,282.00
 Tower Hamlets            | 2013 | 382,738.00
 Tower Hamlets            | 2014 | 444,146.00
@@ -292,12 +292,12 @@ Bexley                   | 2003 | 174,846.00
 Bexley                   | 2004 | 188,035.00
 Bexley                   | 2005 | 194,470.00
 Bexley                   | 2006 | 208,669.00
-Bexley                   | 2009 | 209,558.00
-Bexley                   | 2008 | 219,072.00
 Bexley                   | 2007 | 223,785.00
-Bexley                   | 2012 | 225,744.00
-Bexley                   | 2011 | 226,318.00
+Bexley                   | 2008 | 219,072.00
+Bexley                   | 2009 | 209,558.00
 Bexley                   | 2010 | 226,462.00
+Bexley                   | 2011 | 226,318.00
+Bexley                   | 2012 | 225,744.00
 Bexley                   | 2013 | 236,236.00
 Bexley                   | 2014 | 267,337.00
 Enfield                  | 1995 | 91,227.00
@@ -312,9 +312,9 @@ Enfield                  | 2003 | 206,178.00
 Enfield                  | 2004 | 219,606.00
 Enfield                  | 2005 | 228,720.00
 Enfield                  | 2006 | 243,928.00
-Enfield                  | 2009 | 266,745.00
 Enfield                  | 2007 | 267,530.00
 Enfield                  | 2008 | 270,185.00
+Enfield                  | 2009 | 266,745.00
 Enfield                  | 2010 | 283,635.00
 Enfield                  | 2011 | 284,467.00
 Enfield                  | 2012 | 293,812.00
@@ -333,8 +333,8 @@ Hammersmith and Fulham   | 2004 | 387,701.00
 Hammersmith and Fulham   | 2005 | 419,522.00
 Hammersmith and Fulham   | 2006 | 454,362.00
 Hammersmith and Fulham   | 2007 | 535,899.00
-Hammersmith and Fulham   | 2009 | 557,722.00
 Hammersmith and Fulham   | 2008 | 568,323.00
+Hammersmith and Fulham   | 2009 | 557,722.00
 Hammersmith and Fulham   | 2010 | 620,814.00
 Hammersmith and Fulham   | 2011 | 639,093.00
 Hammersmith and Fulham   | 2012 | 673,136.00
@@ -352,8 +352,8 @@ Ealing                   | 2003 | 238,267.00
 Ealing                   | 2004 | 260,322.00
 Ealing                   | 2005 | 271,476.00
 Ealing                   | 2006 | 292,112.00
-Ealing                   | 2008 | 327,084.00
 Ealing                   | 2007 | 327,448.00
+Ealing                   | 2008 | 327,084.00
 Ealing                   | 2009 | 329,695.00
 Ealing                   | 2010 | 349,291.00
 Ealing                   | 2011 | 372,873.00
@@ -372,9 +372,9 @@ Sutton                   | 2003 | 197,508.00
 Sutton                   | 2004 | 212,106.00
 Sutton                   | 2005 | 224,948.00
 Sutton                   | 2006 | 239,067.00
-Sutton                   | 2009 | 239,889.00
-Sutton                   | 2008 | 258,665.00
 Sutton                   | 2007 | 261,211.00
+Sutton                   | 2008 | 258,665.00
+Sutton                   | 2009 | 239,889.00
 Sutton                   | 2010 | 263,539.00
 Sutton                   | 2011 | 266,768.00
 Sutton                   | 2012 | 271,860.00
@@ -392,12 +392,12 @@ Bromley                  | 2003 | 238,213.00
 Bromley                  | 2004 | 259,196.00
 Bromley                  | 2005 | 267,515.00
 Bromley                  | 2006 | 281,288.00
-Bromley                  | 2009 | 300,997.00
-Bromley                  | 2008 | 303,774.00
 Bromley                  | 2007 | 316,039.00
+Bromley                  | 2008 | 303,774.00
+Bromley                  | 2009 | 300,997.00
 Bromley                  | 2010 | 326,990.00
-Bromley                  | 2012 | 332,919.00
 Bromley                  | 2011 | 336,398.00
+Bromley                  | 2012 | 332,919.00
 Bromley                  | 2013 | 353,217.00
 Bromley                  | 2014 | 397,715.00
 Croydon                  | 1995 | 89,120.00
@@ -412,15 +412,14 @@ Croydon                  | 2003 | 195,870.00
 Croydon                  | 2004 | 208,813.00
 Croydon                  | 2005 | 217,640.00
 Croydon                  | 2006 | 230,220.00
-Croydon                  | 2009 | 231,515.00
 Croydon                  | 2007 | 247,762.00
 Croydon                  | 2008 | 253,118.00
+Croydon                  | 2009 | 231,515.00
 Croydon                  | 2010 | 255,126.00
 Croydon                  | 2011 | 256,911.00
 Croydon                  | 2012 | 261,435.00
 Croydon                  | 2013 | 271,144.00
 Croydon                  | 2014 | 300,726.00
-City of Westminster      | 2014 | 0.00
 City of Westminster      | 1995 | 191,142.00
 City of Westminster      | 1996 | 195,338.00
 City of Westminster      | 1997 | 230,991.00
@@ -434,30 +433,31 @@ City of Westminster      | 2004 | 495,316.00
 City of Westminster      | 2005 | 542,897.00
 City of Westminster      | 2006 | 585,553.00
 City of Westminster      | 2007 | 690,966.00
-City of Westminster      | 2009 | 737,580.00
 City of Westminster      | 2008 | 766,915.00
+City of Westminster      | 2009 | 737,580.00
 City of Westminster      | 2010 | 810,711.00
 City of Westminster      | 2011 | 935,744.00
 City of Westminster      | 2012 | 1,135,554.00
 City of Westminster      | 2013 | 1,299,992.00
-City of London           | 1996 | 138,717.00
+City of Westminster      | 2014 | 0.00
 City of London           | 1995 | 152,063.00
+City of London           | 1996 | 138,717.00
 City of London           | 1997 | 159,550.00
 City of London           | 1998 | 219,029.00
 City of London           | 1999 | 225,810.00
 City of London           | 2000 | 229,970.00
 City of London           | 2001 | 253,069.00
 City of London           | 2002 | 270,679.00
-City of London           | 2004 | 289,917.00
 City of London           | 2003 | 319,902.00
+City of London           | 2004 | 289,917.00
 City of London           | 2005 | 324,347.00
 City of London           | 2006 | 375,937.00
+City of London           | 2007 | 481,308.00
 City of London           | 2008 | 412,343.00
 City of London           | 2009 | 452,185.00
-City of London           | 2007 | 481,308.00
 City of London           | 2010 | 517,386.00
-City of London           | 2012 | 539,915.00
 City of London           | 2011 | 541,191.00
+City of London           | 2012 | 539,915.00
 City of London           | 2013 | 776,098.00
 City of London           | 2014 | 888,592.00
 Newham                   | 1995 | 62,054.00
@@ -471,14 +471,14 @@ Newham                   | 2002 | 146,822.00
 Newham                   | 2003 | 177,445.00
 Newham                   | 2004 | 191,011.00
 Newham                   | 2005 | 203,356.00
-Newham                   | 2009 | 205,680.00
 Newham                   | 2006 | 211,759.00
+Newham                   | 2007 | 230,841.00
+Newham                   | 2008 | 242,867.00
+Newham                   | 2009 | 205,680.00
+Newham                   | 2010 | 219,787.00
 Newham                   | 2011 | 214,575.00
 Newham                   | 2012 | 219,358.00
-Newham                   | 2010 | 219,787.00
-Newham                   | 2007 | 230,841.00
 Newham                   | 2013 | 232,524.00
-Newham                   | 2008 | 242,867.00
 Newham                   | 2014 | 269,583.00
 Redbridge                | 1995 | 84,777.00
 Redbridge                | 1996 | 90,583.00
@@ -491,10 +491,10 @@ Redbridge                | 2002 | 185,711.00
 Redbridge                | 2003 | 211,919.00
 Redbridge                | 2004 | 232,631.00
 Redbridge                | 2005 | 238,295.00
-Redbridge                | 2009 | 255,664.00
 Redbridge                | 2006 | 256,610.00
 Redbridge                | 2007 | 280,228.00
 Redbridge                | 2008 | 280,601.00
+Redbridge                | 2009 | 255,664.00
 Redbridge                | 2010 | 286,046.00
 Redbridge                | 2011 | 294,618.00
 Redbridge                | 2012 | 303,358.00
@@ -512,12 +512,12 @@ Merton                   | 2003 | 246,433.00
 Merton                   | 2004 | 277,078.00
 Merton                   | 2005 | 283,547.00
 Merton                   | 2006 | 303,036.00
-Merton                   | 2009 | 358,003.00
-Merton                   | 2008 | 368,953.00
 Merton                   | 2007 | 374,926.00
-Merton                   | 2012 | 421,344.00
+Merton                   | 2008 | 368,953.00
+Merton                   | 2009 | 358,003.00
 Merton                   | 2010 | 430,819.00
 Merton                   | 2011 | 432,339.00
+Merton                   | 2012 | 421,344.00
 Merton                   | 2013 | 477,074.00
 Merton                   | 2014 | 539,175.00
 Wandsworth               | 1995 | 123,281.00
@@ -532,8 +532,8 @@ Wandsworth               | 2003 | 299,648.00
 Wandsworth               | 2004 | 334,476.00
 Wandsworth               | 2005 | 349,476.00
 Wandsworth               | 2006 | 395,321.00
-Wandsworth               | 2008 | 444,281.00
 Wandsworth               | 2007 | 455,519.00
+Wandsworth               | 2008 | 444,281.00
 Wandsworth               | 2009 | 457,481.00
 Wandsworth               | 2010 | 493,531.00
 Wandsworth               | 2011 | 507,120.00
@@ -547,14 +547,14 @@ Camden                   | 1998 | 224,050.00
 Camden                   | 1999 | 248,236.00
 Camden                   | 2000 | 312,250.00
 Camden                   | 2001 | 339,316.00
-Camden                   | 2003 | 376,429.00
 Camden                   | 2002 | 377,700.00
+Camden                   | 2003 | 376,429.00
 Camden                   | 2004 | 409,380.00
 Camden                   | 2005 | 438,455.00
 Camden                   | 2006 | 492,257.00
 Camden                   | 2007 | 561,454.00
-Camden                   | 2009 | 595,878.00
 Camden                   | 2008 | 656,983.00
+Camden                   | 2009 | 595,878.00
 Camden                   | 2010 | 712,550.00
 Camden                   | 2011 | 721,553.00
 Camden                   | 2012 | 784,727.00
@@ -573,8 +573,8 @@ Hackney                  | 2004 | 237,251.00
 Hackney                  | 2005 | 249,715.00
 Hackney                  | 2006 | 275,527.00
 Hackney                  | 2007 | 312,565.00
-Hackney                  | 2009 | 314,068.00
 Hackney                  | 2008 | 316,426.00
+Hackney                  | 2009 | 314,068.00
 Hackney                  | 2010 | 345,300.00
 Hackney                  | 2011 | 352,848.00
 Hackney                  | 2012 | 379,430.00
@@ -592,9 +592,9 @@ Richmond upon Thames     | 2003 | 347,046.00
 Richmond upon Thames     | 2004 | 383,007.00
 Richmond upon Thames     | 2005 | 393,286.00
 Richmond upon Thames     | 2006 | 434,743.00
-Richmond upon Thames     | 2009 | 505,666.00
-Richmond upon Thames     | 2008 | 509,595.00
 Richmond upon Thames     | 2007 | 511,366.00
+Richmond upon Thames     | 2008 | 509,595.00
+Richmond upon Thames     | 2009 | 505,666.00
 Richmond upon Thames     | 2010 | 548,711.00
 Richmond upon Thames     | 2011 | 569,195.00
 Richmond upon Thames     | 2012 | 589,367.00
@@ -621,8 +621,8 @@ Westminster              | 2012 | 0.00
 Westminster              | 2013 | 0.00
 Westminster              | 2014 | 1,464,141.00
 Haringey                 | 1995 | 106,769.00
-Haringey                 | 1997 | 118,522.00
 Haringey                 | 1996 | 120,182.00
+Haringey                 | 1997 | 118,522.00
 Haringey                 | 1998 | 132,504.00
 Haringey                 | 1999 | 147,846.00
 Haringey                 | 2000 | 172,240.00
@@ -632,9 +632,9 @@ Haringey                 | 2003 | 236,921.00
 Haringey                 | 2004 | 259,417.00
 Haringey                 | 2005 | 274,809.00
 Haringey                 | 2006 | 305,371.00
+Haringey                 | 2007 | 352,799.00
 Haringey                 | 2008 | 346,224.00
 Haringey                 | 2009 | 350,597.00
-Haringey                 | 2007 | 352,799.00
 Haringey                 | 2010 | 392,470.00
 Haringey                 | 2011 | 407,454.00
 Haringey                 | 2012 | 410,343.00
@@ -651,10 +651,10 @@ Harrow                   | 2002 | 221,980.00
 Harrow                   | 2003 | 253,482.00
 Harrow                   | 2004 | 271,125.00
 Harrow                   | 2005 | 281,248.00
-Harrow                   | 2009 | 290,623.00
 Harrow                   | 2006 | 295,438.00
-Harrow                   | 2008 | 314,550.00
 Harrow                   | 2007 | 320,773.00
+Harrow                   | 2008 | 314,550.00
+Harrow                   | 2009 | 290,623.00
 Harrow                   | 2010 | 330,717.00
 Harrow                   | 2011 | 341,108.00
 Harrow                   | 2012 | 341,939.00
@@ -673,8 +673,8 @@ Brent                    | 2004 | 249,281.00
 Brent                    | 2005 | 265,640.00
 Brent                    | 2006 | 284,067.00
 Brent                    | 2007 | 321,309.00
-Brent                    | 2009 | 323,851.00
 Brent                    | 2008 | 329,118.00
+Brent                    | 2009 | 323,851.00
 Brent                    | 2010 | 345,224.00
 Brent                    | 2011 | 360,897.00
 Brent                    | 2012 | 390,197.00
