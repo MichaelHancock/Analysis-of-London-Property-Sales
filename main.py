@@ -299,6 +299,9 @@ def main():
     text_file = open("Output/London_Borough_Sales.txt", "w")
     text_file.write(output)
     text_file.close()
+    boroughSaleCount = []
+    maxSalesCount = []
+    minSalesCount = []
 
     #   Calculate average price over time
     print("\nCalculating average property price changes over time")
@@ -363,6 +366,22 @@ def main():
         sumValue = yearByYearPercentageChange[year] + sumValue
     averageChangeYearByYear = sumValue / len(yearByYearPercentageChange)
     print("Average percentage change:\t{}%").format(round(averageChangeYearByYear), 2).expandtabs(30)
+
+    #   Predict future prices using average percentage change
+    print ("\nCalculating future prices using average percentage change")
+    currentPrice = meanPricePerYear[maxYear]
+    decimalChange = averageChangeYearByYear / 100
+    currentPrice = round(currentPrice + (currentPrice * (decimalChange)), 2)
+    currentYear = int(maxYear) + 1
+    meanPricePerYear.update({ currentYear : currentPrice })
+    for index in range(6):
+        if index > 0:
+            currentYear = currentYear + 1
+            currentPrice = round(currentPrice + (currentPrice * (decimalChange)), 2)
+            meanPricePerYear.update({ currentYear : currentPrice })
+
+    for key, value in sorted(meanPricePerYear.iteritems(), key=lambda (k,v): (v,k)):
+        print key, meanPricePerYear[key]
 
     pause("\nPress the enter key to continue...")
 
