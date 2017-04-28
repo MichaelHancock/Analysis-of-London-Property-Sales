@@ -1,0 +1,304 @@
+Borough                  | Total Number of Sales
+Westminster              | 3494
+City of London           | 6345
+Barking and Dagenham     | 45142
+Hackney                  | 51922
+Islington                | 58366
+Kingston upon Thames     | 63987
+Camden                   | 64296
+Hammersmith and Fulham   | 64376
+Newham                   | 64439
+Harrow                   | 65835
+Brent                    | 67586
+Haringey                 | 67778
+Kensington and Chelsea   | 68962
+Hounslow                 | 70690
+Greenwich                | 72726
+Merton                   | 73076
+Waltham Forest           | 73087
+Sutton                   | 73771
+Havering                 | 74328
+Bexley                   | 76433
+Southwark                | 79955
+Tower Hamlets            | 82205
+Richmond upon Thames     | 83123
+Lewisham                 | 84751
+Redbridge                | 84787
+Hillingdon               | 85395
+City of Westminster      | 91023
+Ealing                   | 93362
+Enfield                  | 95632
+Lambeth                  | 95911
+Barnet                   | 110468
+Croydon                  | 115017
+Bromley                  | 120352
+Wandsworth               | 136979
+
+Year | Borough With Most / Least Sales
+1995 | Most sales: Wandsworth: 4814 
+       Least sales: City of London: 155
+1996 | Most sales: Wandsworth: 6378 
+       Least sales: City of London: 275
+1997 | Most sales: Wandsworth: 7643 
+       Least sales: City of London: 319
+1998 | Most sales: Wandsworth: 7236 
+       Least sales: City of London: 424
+1999 | Most sales: Wandsworth: 9357 
+       Least sales: City of London: 536
+2000 | Most sales: Wandsworth: 7516 
+       Least sales: City of London: 431
+2001 | Most sales: Wandsworth: 8154 
+       Least sales: City of London: 365
+2002 | Most sales: Wandsworth: 8568 
+       Least sales: City of London: 391
+2003 | Most sales: Croydon: 7596 
+       Least sales: City of London: 479
+2004 | Most sales: Wandsworth: 8519 
+       Least sales: City of London: 377
+2005 | Most sales: Wandsworth: 7403 
+       Least sales: City of London: 303
+2006 | Most sales: Wandsworth: 9401 
+       Least sales: City of London: 295
+2007 | Most sales: Wandsworth: 8467 
+       Least sales: City of London: 268
+2008 | Most sales: Wandsworth: 3967 
+       Least sales: City of London: 141
+2009 | Most sales: Wandsworth: 4397 
+       Least sales: City of London: 157
+2010 | Most sales: Wandsworth: 5310 
+       Least sales: City of London: 235
+2011 | Most sales: Wandsworth: 5258 
+       Least sales: City of London: 256
+2012 | Most sales: Wandsworth: 5198 
+       Least sales: City of London: 195
+2013 | Most sales: Wandsworth: 6283 
+       Least sales: City of London: 434
+2014 | Most sales: Bromley: 6035 
+       Least sales: City of London: 309
+
+Borough                  | Mean Sale Price
+Barking and Dagenham     | 144,996.00 GBP
+Newham                   | 166,590.00 GBP
+Bexley                   | 169,484.00 GBP
+Waltham Forest           | 177,618.00 GBP
+Havering                 | 188,831.00 GBP
+Croydon                  | 190,537.00 GBP
+Lewisham                 | 193,932.00 GBP
+Sutton                   | 194,451.00 GBP
+Enfield                  | 199,562.00 GBP
+Redbridge                | 205,590.00 GBP
+Hillingdon               | 206,127.00 GBP
+Greenwich                | 213,088.00 GBP
+Brent                    | 235,424.00 GBP
+Harrow                   | 239,443.00 GBP
+Hounslow                 | 239,985.00 GBP
+Bromley                  | 240,292.00 GBP
+Ealing                   | 250,694.00 GBP
+Hackney                  | 255,679.00 GBP
+Kingston upon Thames     | 256,624.00 GBP
+Haringey                 | 262,603.00 GBP
+Tower Hamlets            | 264,387.00 GBP
+Lambeth                  | 268,081.00 GBP
+Southwark                | 270,833.00 GBP
+Merton                   | 275,521.00 GBP
+Barnet                   | 292,326.00 GBP
+Wandsworth               | 339,659.00 GBP
+Islington                | 347,935.00 GBP
+City of London           | 367,295.00 GBP
+Richmond upon Thames     | 377,484.00 GBP
+Hammersmith and Fulham   | 412,482.00 GBP
+Camden                   | 453,673.00 GBP
+City of Westminster      | 521,081.00 GBP
+Kensington and Chelsea   | 776,109.00 GBP
+Westminster              | 1,464,141.00 GBP
+
+Borough                  | Median Sale Price
+Barking and Dagenham     | 146,000.00 GBP
+Bexley                   | 155,000.00 GBP
+Newham                   | 160,000.00 GBP
+Waltham Forest           | 164,000.00 GBP
+Croydon                  | 167,500.00 GBP
+Enfield                  | 168,000.00 GBP
+Lewisham                 | 168,000.00 GBP
+Sutton                   | 168,000.00 GBP
+Havering                 | 170,000.00 GBP
+Greenwich                | 180,000.00 GBP
+Redbridge                | 180,950.00 GBP
+Hillingdon               | 183,500.00 GBP
+Brent                    | 190,000.00 GBP
+Hounslow                 | 191,000.00 GBP
+Haringey                 | 195,000.00 GBP
+Bromley                  | 199,950.00 GBP
+Merton                   | 203,972.50 GBP
+Harrow                   | 205,000.00 GBP
+Ealing                   | 206,000.00 GBP
+Kingston upon Thames     | 213,500.00 GBP
+Hackney                  | 215,000.00 GBP
+Lambeth                  | 217,000.00 GBP
+Southwark                | 220,000.00 GBP
+Barnet                   | 221,675.00 GBP
+Tower Hamlets            | 233,000.00 GBP
+Wandsworth               | 250,000.00 GBP
+Islington                | 270,000.00 GBP
+Richmond upon Thames     | 272,500.00 GBP
+City of London           | 277,000.00 GBP
+Hammersmith and Fulham   | 295,000.00 GBP
+Camden                   | 300,000.00 GBP
+City of Westminster      | 325,000.00 GBP
+Kensington and Chelsea   | 430,000.00 GBP
+Westminster              | 875,000.00 GBP
+
+Year | Borough With Most Expensive / Least Expensive Sales
+1995 | Most expensive borough: Kensington and Chelsea: 279,165.00 GBP 
+       Least expensive borough: Newham: 62,054.00 GBP
+1996 | Most expensive borough: Kensington and Chelsea: 305,595.00 GBP 
+       Least expensive borough: Newham: 63,763.00 GBP
+1997 | Most expensive borough: Kensington and Chelsea: 356,040.00 GBP 
+       Least expensive borough: Barking and Dagenham: 66,184.00 GBP
+1998 | Most expensive borough: Kensington and Chelsea: 376,155.00 GBP 
+       Least expensive borough: Barking and Dagenham: 70,846.00 GBP
+1999 | Most expensive borough: Kensington and Chelsea: 433,534.00 GBP 
+       Least expensive borough: Barking and Dagenham: 74,822.00 GBP
+2000 | Most expensive borough: Kensington and Chelsea: 554,924.00 GBP 
+       Least expensive borough: Barking and Dagenham: 87,268.00 GBP
+2001 | Most expensive borough: Kensington and Chelsea: 585,903.00 GBP 
+       Least expensive borough: Barking and Dagenham: 96,195.00 GBP
+2002 | Most expensive borough: Kensington and Chelsea: 617,064.00 GBP 
+       Least expensive borough: Barking and Dagenham: 119,537.00 GBP
+2003 | Most expensive borough: Kensington and Chelsea: 657,300.00 GBP 
+       Least expensive borough: Barking and Dagenham: 145,931.00 GBP
+2004 | Most expensive borough: Kensington and Chelsea: 712,578.00 GBP 
+       Least expensive borough: Barking and Dagenham: 163,713.00 GBP
+2005 | Most expensive borough: Kensington and Chelsea: 757,087.00 GBP 
+       Least expensive borough: Barking and Dagenham: 169,737.00 GBP
+2006 | Most expensive borough: Kensington and Chelsea: 878,320.00 GBP 
+       Least expensive borough: Barking and Dagenham: 174,864.00 GBP
+2007 | Most expensive borough: Kensington and Chelsea: 1,030,321.00 GBP 
+       Least expensive borough: Barking and Dagenham: 192,579.00 GBP
+2008 | Most expensive borough: Kensington and Chelsea: 1,187,310.00 GBP 
+       Least expensive borough: Barking and Dagenham: 196,717.00 GBP
+2009 | Most expensive borough: Kensington and Chelsea: 1,038,524.00 GBP 
+       Least expensive borough: Barking and Dagenham: 166,317.00 GBP
+2010 | Most expensive borough: Kensington and Chelsea: 1,247,825.00 GBP 
+       Least expensive borough: Barking and Dagenham: 178,906.00 GBP
+2011 | Most expensive borough: Kensington and Chelsea: 1,287,522.00 GBP 
+       Least expensive borough: Barking and Dagenham: 180,263.00 GBP
+2012 | Most expensive borough: Kensington and Chelsea: 1,527,450.00 GBP 
+       Least expensive borough: Barking and Dagenham: 181,866.00 GBP
+2013 | Most expensive borough: Kensington and Chelsea: 1,656,727.00 GBP 
+       Least expensive borough: Barking and Dagenham: 187,472.00 GBP
+2014 | Most expensive borough: Kensington and Chelsea: 1,951,497.00 GBP 
+       Least expensive borough: Barking and Dagenham: 215,102.00 GBP
+
+Borough                  | Percentage Change in Price Between 1995 and 2014
+Barking and Dagenham     | 238.85%
+Newham                   | 334.43%
+Bexley                   | 245.36%
+Waltham Forest           | 364.95%
+Havering                 | 236.42%
+Croydon                  | 237.44%
+Lewisham                 | 358.28%
+Sutton                   | 266.12%
+Enfield                  | 283.78%
+Redbridge                | 300.27%
+Hillingdon               | 283.48%
+Greenwich                | 322.32%
+Brent                    | 424.83%
+Harrow                   | 335.91%
+Hounslow                 | 334.21%
+Bromley                  | 284.27%
+Ealing                   | 396.54%
+Hackney                  | 465.83%
+Kingston upon Thames     | 365.07%
+Haringey                 | 409.33%
+Tower Hamlets            | 397.7%
+Lambeth                  | 460.38%
+Southwark                | 412.27%
+Merton                   | 393.38%
+Barnet                   | 334.18%
+Wandsworth               | 452.04%
+Islington                | 419.6%
+City of London           | 484.36%
+Richmond upon Thames     | 413.99%
+Hammersmith and Fulham   | 500.55%
+Camden                   | 501.41%
+Kensington and Chelsea   | 599.05%
+
+Year                     | Percentage Change
+1995 - 1996              | 6.15%
+1996 - 1997              | 10.0%
+1997 - 1998              | 8.1%
+1998 - 1999              | 13.73%
+1999 - 2000              | 16.88%
+2000 - 2001              | 7.89%
+2001 - 2002              | 13.73%
+2002 - 2003              | 6.9%
+2003 - 2004              | 9.32%
+2004 - 2005              | 6.03%
+2005 - 2006              | 8.84%
+2006 - 2007              | 11.7%
+2007 - 2008              | 2.34%
+2008 - 2009              | 0.17%
+2009 - 2010              | 12.39%
+2010 - 2011              | 3.1%
+2011 - 2012              | 4.06%
+2012 - 2013              | 8.55%
+2013 - 2014              | 11.09%
+Average percentage change:    8.0%
+Trimmed percentage change:    9.0%
+
+Year | Mean Price of Sales
+1995 | 113,619.00 GBP
+1996 | 120,609.00 GBP
+1997 | 132,668.00 GBP
+1998 | 143,417.00 GBP
+1999 | 163,105.00 GBP
+2000 | 190,634.00 GBP
+2001 | 205,668.00 GBP
+2002 | 233,906.00 GBP
+2003 | 250,040.00 GBP
+2004 | 273,345.00 GBP
+2005 | 289,829.00 GBP
+2006 | 315,458.00 GBP
+2007 | 352,379.00 GBP
+2008 | 360,608.00 GBP
+2009 | 361,235.00 GBP
+2010 | 405,987.00 GBP
+2011 | 418,568.00 GBP
+2012 | 435,556.00 GBP
+2013 | 472,809.00 GBP
+2014 | 525,257.00 GBP
+2015 | 569,757.67 GBP (Predicted)
+2016 | 618,028.51 GBP (Predicted)
+2017 | 670,388.94 GBP (Predicted)
+2018 | 727,185.44 GBP (Predicted)
+2019 | 788,793.83 GBP (Predicted)
+2020 | 855,621.79 GBP (Predicted)
+
+Year | Median Price of Sales
+1995 | 83,000.00 GBP
+1996 | 87,000.00 GBP
+1997 | 94,997.00 GBP
+1998 | 105,000.00 GBP
+1999 | 121,500.00 GBP
+2000 | 139,995.00 GBP
+2001 | 155,000.00 GBP
+2002 | 181,500.00 GBP
+2003 | 200,000.00 GBP
+2004 | 220,000.00 GBP
+2005 | 230,000.00 GBP
+2006 | 245,000.00 GBP
+2009 | 250,000.00 GBP
+2008 | 256,997.50 GBP
+2007 | 262,000.00 GBP
+2010 | 287,000.00 GBP
+2011 | 291,690.00 GBP
+2012 | 300,000.00 GBP
+2013 | 322,000.00 GBP
+2014 | 365,000.00 GBP
+2015 | 395,923.42 GBP (Predicted)
+2016 | 429,466.73 GBP (Predicted)
+2017 | 465,851.89 GBP (Predicted)
+2018 | 505,319.66 GBP (Predicted)
+2019 | 548,131.21 GBP (Predicted)
+2020 | 594,569.82 GBP (Predicted)
