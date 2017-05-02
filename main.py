@@ -258,6 +258,51 @@ def calculateYearByYearPercentageChange(londonData, meanPricePerYear):
 
     return changePerYear
 
+def calculateRangeInBoroughs(londonData):
+    boroughs = {}
+
+    #   Populate keys of boroughs
+    for key in londonData['borough_name']:
+        if (not (key in boroughs)) and len(key) > 1:
+            boroughs.update({ key: [] })
+
+    #   Add values to sub-arrays in boroughs
+    for index, key in enumerate(londonData['borough_name']):
+        if key in boroughs:
+            boroughs[key].append(int(londonData["price"][index]))
+
+    #   Find range of prices for each borough
+    for key in boroughs:
+        minimum = min(boroughs[key])
+        maximim = max(boroughs[key])
+        boroughs[key] = maximim - minimum
+
+    return boroughs
+
+def numberOfMillionPoundSales(londonData):
+    boroughs = {}
+
+    #   Populate keys of boroughs
+    for key in londonData['borough_name']:
+        if (not (key in boroughs)) and len(key) > 1:
+            boroughs.update({ key: [] })
+
+    #   Add values to sub-arrays in boroughs
+    for index, key in enumerate(londonData['borough_name']):
+        if key in boroughs:
+            boroughs[key].append(int(londonData["price"][index]))
+
+    #   Count the number of sales that cost over 1million
+    for key in boroughs:
+        salesOverOneMillion = 0
+        for sale in boroughs[key]:
+            if sale >= 1000000:
+                salesOverOneMillion = salesOverOneMillion + 1
+        boroughs[key] = salesOverOneMillion
+
+    return boroughs
+
+
 def main():
     print("\nAnalysis of London Property Sales\n")
 
@@ -416,6 +461,22 @@ def main():
             print ("{} {}".format(key, "\t{:00,.2f} GBP".format(meanPricePerYear[key]))).expandtabs(30)
             finalOutput = finalOutput + ("{} | {}".format(key, "{:00,.2f} GBP\n".format(meanPricePerYear[key]))).expandtabs(30)
 
+    #   Calculate range of prices in London Boroughs
+    print ("\nCalculating price ranges in London boroughs")
+    finalOutput = finalOutput + "\nBorough\t| Range of Sale Prices\n".expandtabs(25)
+    boroughRange = calculateRangeInBoroughs(londonData)
+    for key, value in sorted(boroughRange.iteritems(), key=lambda (k,v): (v,k)):
+        finalOutput = finalOutput + "{}\t| {}\n".format(key, "{:00,.2f} GBP".format(value)).expandtabs(25)
+        print ("{} {}".format(key, "\t{:00,.2f} GBP".format(value))).expandtabs(30)
+
+    #   Calculate number of million pound sales in boroughs
+    print ("\nCalculating number of million pound property sales across London Boroughs")
+    finalOutput = finalOutput + "\nBoroughs\t| Range of Sale Prices\n".expandtabs(25)
+    millionPoundSales = numberOfMillionPoundSales(londonData)
+    for key, value in sorted(millionPoundSales.iteritems(), key=lambda (k,v): (v,k)):
+        finalOutput = finalOutput + "{}\t| {}\n".format(key, "{:00,.2f} GBP".format(value)).expandtabs(25)
+        print ("{}\t{}".format(key, value)).expandtabs(30)
+
     #   Predict future prices using average percentage change for median price values
     print ("\nCalculating future median prices using average percentage change")
     currentPrice = medianPricePerYear[maxYear]
@@ -436,7 +497,6 @@ def main():
         else:
             print ("{} {}".format(key, "\t{:00,.2f} GBP".format(medianPricePerYear[key]))).expandtabs(30)
             finalOutput = finalOutput + ("{} | {}".format(key, "{:00,.2f} GBP\n".format(medianPricePerYear[key]))).expandtabs(30)
-
 
     text_file = open("Output/London_Sales_Basic.txt", "w")
     text_file.write(finalOutput)

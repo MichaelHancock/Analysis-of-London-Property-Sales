@@ -275,6 +275,78 @@ Year | Mean Price of Sales
 2019 | 788,793.83 GBP (Predicted)
 2020 | 855,621.79 GBP (Predicted)
 
+Borough                  | Range of Sale Prices
+Barking and Dagenham     | 599,950.00 GBP
+Waltham Forest           | 1,212,300.00 GBP
+Bexley                   | 1,699,750.00 GBP
+Newham                   | 2,349,949.00 GBP
+Redbridge                | 2,549,900.00 GBP
+Hackney                  | 2,592,435.00 GBP
+Havering                 | 2,949,750.00 GBP
+Hillingdon               | 3,349,950.00 GBP
+Sutton                   | 3,524,975.00 GBP
+Lewisham                 | 3,828,480.00 GBP
+Brent                    | 3,849,900.00 GBP
+Greenwich                | 4,119,950.00 GBP
+Croydon                  | 4,174,998.00 GBP
+Bromley                  | 4,499,750.00 GBP
+Harrow                   | 5,224,855.00 GBP
+Tower Hamlets            | 5,313,286.00 GBP
+Enfield                  | 5,499,900.00 GBP
+Southwark                | 5,799,985.00 GBP
+Islington                | 6,449,623.00 GBP
+Ealing                   | 6,599,168.00 GBP
+Kingston upon Thames     | 11,150,000.00 GBP
+Richmond upon Thames     | 11,949,750.00 GBP
+Wandsworth               | 12,149,750.00 GBP
+Hounslow                 | 12,449,950.00 GBP
+Lambeth                  | 13,541,150.00 GBP
+City of London           | 16,448,500.00 GBP
+Merton                   | 17,449,875.00 GBP
+Hammersmith and Fulham   | 17,949,600.00 GBP
+Haringey                 | 17,949,750.00 GBP
+Camden                   | 19,990,000.00 GBP
+Barnet                   | 21,699,900.00 GBP
+City of Westminster      | 38,949,850.00 GBP
+Westminster              | 49,887,500.00 GBP
+Kensington and Chelsea   | 54,908,500.00 GBP
+
+Boroughs                 | Range of Sale Prices
+Barking and Dagenham     | 0.00 GBP
+Waltham Forest           | 7.00 GBP
+Bexley                   | 13.00 GBP
+Newham                   | 14.00 GBP
+Havering                 | 130.00 GBP
+Sutton                   | 144.00 GBP
+Redbridge                | 145.00 GBP
+Croydon                  | 173.00 GBP
+Lewisham                 | 195.00 GBP
+Hillingdon               | 212.00 GBP
+City of London           | 214.00 GBP
+Hackney                  | 354.00 GBP
+Greenwich                | 385.00 GBP
+Enfield                  | 408.00 GBP
+Harrow                   | 475.00 GBP
+Tower Hamlets            | 611.00 GBP
+Brent                    | 672.00 GBP
+Kingston upon Thames     | 686.00 GBP
+Bromley                  | 960.00 GBP
+Ealing                   | 1,040.00 GBP
+Hounslow                 | 1,055.00 GBP
+Southwark                | 1,106.00 GBP
+Lambeth                  | 1,321.00 GBP
+Haringey                 | 1,418.00 GBP
+Westminster              | 1,469.00 GBP
+Merton                   | 1,716.00 GBP
+Islington                | 1,898.00 GBP
+Barnet                   | 2,555.00 GBP
+Richmond upon Thames     | 4,023.00 GBP
+Hammersmith and Fulham   | 4,096.00 GBP
+Camden                   | 4,693.00 GBP
+Wandsworth               | 4,705.00 GBP
+City of Westminster      | 9,266.00 GBP
+Kensington and Chelsea   | 13,791.00 GBP
+
 Year | Median Price of Sales
 1995 | 83,000.00 GBP
 1996 | 87,000.00 GBP
