@@ -411,7 +411,7 @@ def main():
     print ("\nCalculating percentage change in average prices for London boroughs between {} and {}").format(minYear, maxYear)
     finalOutput = finalOutput + "\nBorough\t| Percentage Change in Price Between {} and {}\n".format(minYear, maxYear).expandtabs(25)
     boroughPercentageChange = calculatePercentageChangeInBoroughs(londonData, pricePerBoroughOverTime, minYear, maxYear)
-    for key, value in sorted(pricePerBorough.iteritems(), key=lambda (k,v): (v,k)):
+    for key, value in sorted(boroughPercentageChange.iteritems(), key=lambda (k,v): (v,k)):
         if (not int(boroughPercentageChange[key]) == 0):
             finalOutput = finalOutput + "{}\t| {}%\n".format(key, round(boroughPercentageChange[key], 2)).expandtabs(25)
             print("{}\t{}%").format(key, round(boroughPercentageChange[key], 2)).expandtabs(30)

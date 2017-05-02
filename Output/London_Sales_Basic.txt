@@ -191,35 +191,35 @@ Year | Borough With Most Expensive / Least Expensive Sales
        Least expensive borough: Barking and Dagenham: 215,102.00 GBP
 
 Borough                  | Percentage Change in Price Between 1995 and 2014
-Barking and Dagenham     | 238.85%
-Newham                   | 334.43%
-Bexley                   | 245.36%
-Waltham Forest           | 364.95%
 Havering                 | 236.42%
 Croydon                  | 237.44%
-Lewisham                 | 358.28%
+Barking and Dagenham     | 238.85%
+Bexley                   | 245.36%
 Sutton                   | 266.12%
-Enfield                  | 283.78%
-Redbridge                | 300.27%
 Hillingdon               | 283.48%
-Greenwich                | 322.32%
-Brent                    | 424.83%
-Harrow                   | 335.91%
-Hounslow                 | 334.21%
+Enfield                  | 283.78%
 Bromley                  | 284.27%
-Ealing                   | 396.54%
-Hackney                  | 465.83%
-Kingston upon Thames     | 365.07%
-Haringey                 | 409.33%
-Tower Hamlets            | 397.7%
-Lambeth                  | 460.38%
-Southwark                | 412.27%
-Merton                   | 393.38%
+Redbridge                | 300.27%
+Greenwich                | 322.32%
 Barnet                   | 334.18%
-Wandsworth               | 452.04%
-Islington                | 419.6%
-City of London           | 484.36%
+Hounslow                 | 334.21%
+Newham                   | 334.43%
+Harrow                   | 335.91%
+Lewisham                 | 358.28%
+Waltham Forest           | 364.95%
+Kingston upon Thames     | 365.07%
+Merton                   | 393.38%
+Ealing                   | 396.54%
+Tower Hamlets            | 397.7%
+Haringey                 | 409.33%
+Southwark                | 412.27%
 Richmond upon Thames     | 413.99%
+Islington                | 419.6%
+Brent                    | 424.83%
+Wandsworth               | 452.04%
+Lambeth                  | 460.38%
+Hackney                  | 465.83%
+City of London           | 484.36%
 Hammersmith and Fulham   | 500.55%
 Camden                   | 501.41%
 Kensington and Chelsea   | 599.05%
