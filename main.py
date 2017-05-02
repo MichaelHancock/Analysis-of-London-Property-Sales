@@ -439,6 +439,7 @@ def main():
     print("Trimmed percentage change:\t{}%").format(round(trimmedPercentageChange), 2).expandtabs(30)
     finalOutput = finalOutput + ("Average percentage change:\t{}%\n").format(round(averageChangeYearByYear), 2).expandtabs(30)
     finalOutput = finalOutput + ("Trimmed percentage change:\t{}%\n").format(round(trimmedPercentageChange), 2).expandtabs(30)
+
     #   Predict future prices using average percentage change for mean price values
     print ("\nCalculating future mean prices using average percentage change")
     currentPrice = meanPricePerYear[maxYear]
@@ -479,6 +480,16 @@ def main():
 
     #   Predict future prices using average percentage change for median price values
     print ("\nCalculating future median prices using average percentage change")
+    yearByYearPercentageChange = calculateYearByYearPercentageChange(londonData, medianPricePerYear)
+    sumValue = 0
+    prices = []
+    for year in yearByYearPercentageChange:
+        sumValue = yearByYearPercentageChange[year] + sumValue
+        prices.append(yearByYearPercentageChange[year])
+    averageChangeYearByYear = sumValue / len(yearByYearPercentageChange)
+    trimmedPercentageChange = trimmedMean(sorted(prices), 80)
+    prices = []
+    decimalChange = averageChangeYearByYear / 100
     currentPrice = medianPricePerYear[maxYear]
     currentPrice = round(currentPrice + (currentPrice * (decimalChange)), 2)
     currentYear = int(maxYear) + 1

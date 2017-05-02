@@ -368,9 +368,9 @@ Year | Median Price of Sales
 2012 | 300,000.00 GBP
 2013 | 322,000.00 GBP
 2014 | 365,000.00 GBP
-2015 | 395,923.42 GBP (Predicted)
-2016 | 429,466.73 GBP (Predicted)
-2017 | 465,851.89 GBP (Predicted)
-2018 | 505,319.66 GBP (Predicted)
-2019 | 548,131.21 GBP (Predicted)
-2020 | 594,569.82 GBP (Predicted)
+2015 | 395,127.80 GBP (Predicted)
+2016 | 427,742.41 GBP (Predicted)
+2017 | 463,049.09 GBP (Predicted)
+2018 | 501,270.05 GBP (Predicted)
+2019 | 542,645.84 GBP (Predicted)
+2020 | 587,436.87 GBP (Predicted)
