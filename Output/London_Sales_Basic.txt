@@ -311,41 +311,41 @@ City of Westminster      | 38,949,850.00 GBP
 Westminster              | 49,887,500.00 GBP
 Kensington and Chelsea   | 54,908,500.00 GBP
 
-Boroughs                 | Range of Sale Prices
-Barking and Dagenham     | 0.00 GBP
-Waltham Forest           | 7.00 GBP
-Bexley                   | 13.00 GBP
-Newham                   | 14.00 GBP
-Havering                 | 130.00 GBP
-Sutton                   | 144.00 GBP
-Redbridge                | 145.00 GBP
-Croydon                  | 173.00 GBP
-Lewisham                 | 195.00 GBP
-Hillingdon               | 212.00 GBP
-City of London           | 214.00 GBP
-Hackney                  | 354.00 GBP
-Greenwich                | 385.00 GBP
-Enfield                  | 408.00 GBP
-Harrow                   | 475.00 GBP
-Tower Hamlets            | 611.00 GBP
-Brent                    | 672.00 GBP
-Kingston upon Thames     | 686.00 GBP
-Bromley                  | 960.00 GBP
-Ealing                   | 1,040.00 GBP
-Hounslow                 | 1,055.00 GBP
-Southwark                | 1,106.00 GBP
-Lambeth                  | 1,321.00 GBP
-Haringey                 | 1,418.00 GBP
-Westminster              | 1,469.00 GBP
-Merton                   | 1,716.00 GBP
-Islington                | 1,898.00 GBP
-Barnet                   | 2,555.00 GBP
-Richmond upon Thames     | 4,023.00 GBP
-Hammersmith and Fulham   | 4,096.00 GBP
-Camden                   | 4,693.00 GBP
-Wandsworth               | 4,705.00 GBP
-City of Westminster      | 9,266.00 GBP
-Kensington and Chelsea   | 13,791.00 GBP
+Boroughs                 | Number of Million Pound Sales
+Barking and Dagenham     | 0
+Waltham Forest           | 7
+Bexley                   | 13
+Newham                   | 14
+Havering                 | 130
+Sutton                   | 144
+Redbridge                | 145
+Croydon                  | 173
+Lewisham                 | 195
+Hillingdon               | 212
+City of London           | 214
+Hackney                  | 354
+Greenwich                | 385
+Enfield                  | 408
+Harrow                   | 475
+Tower Hamlets            | 611
+Brent                    | 672
+Kingston upon Thames     | 686
+Bromley                  | 960
+Ealing                   | 1040
+Hounslow                 | 1055
+Southwark                | 1106
+Lambeth                  | 1321
+Haringey                 | 1418
+Westminster              | 1469
+Merton                   | 1716
+Islington                | 1898
+Barnet                   | 2555
+Richmond upon Thames     | 4023
+Hammersmith and Fulham   | 4096
+Camden                   | 4693
+Wandsworth               | 4705
+City of Westminster      | 9266
+Kensington and Chelsea   | 13791
 
 Year | Median Price of Sales
 1995 | 83,000.00 GBP

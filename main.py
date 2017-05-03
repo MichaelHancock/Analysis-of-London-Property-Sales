@@ -472,10 +472,10 @@ def main():
 
     #   Calculate number of million pound sales in boroughs
     print ("\nCalculating number of million pound property sales across London Boroughs")
-    finalOutput = finalOutput + "\nBoroughs\t| Range of Sale Prices\n".expandtabs(25)
+    finalOutput = finalOutput + "\nBoroughs\t| Number of Million Pound Sales\n".expandtabs(25)
     millionPoundSales = numberOfMillionPoundSales(londonData)
     for key, value in sorted(millionPoundSales.iteritems(), key=lambda (k,v): (v,k)):
-        finalOutput = finalOutput + "{}\t| {}\n".format(key, "{:00,.2f} GBP".format(value)).expandtabs(25)
+        finalOutput = finalOutput + "{}\t| {}\n".format(key, value).expandtabs(25)
         print ("{}\t{}".format(key, value)).expandtabs(30)
 
     #   Predict future prices using average percentage change for median price values
