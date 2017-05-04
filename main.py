@@ -292,7 +292,7 @@ def numberOfMillionPoundSales(londonData):
         if key in boroughs:
             boroughs[key].append(int(londonData["price"][index]))
 
-    #   Count the number of sales that cost over 1million
+    #   Count the number of sales that cost over 1 million
     for key in boroughs:
         salesOverOneMillion = 0
         for sale in boroughs[key]:
@@ -302,6 +302,28 @@ def numberOfMillionPoundSales(londonData):
 
     return boroughs
 
+def numberOfMillionPoundSalesOverTime(londonData):
+    years = {}
+
+    #   Populate keys of prices
+    for year in londonData["year"]:
+        if not (year in years):
+            years.update({ year: [] })
+
+    #   Add values to sub-arrays in years
+    for index, key in enumerate(londonData["year"]):
+        if key in years:
+            years[key].append(int(londonData["price"][index]))
+
+    #   Count the number of sales that cost over 1million
+    for year in years:
+        salesOverOneMillion = 0
+        for sale in years[year]:
+            if sale >= 1000000:
+                salesOverOneMillion = salesOverOneMillion + 1
+        years[year] = salesOverOneMillion
+
+    return years
 
 def main():
     print("\nAnalysis of London Property Sales\n")
@@ -476,6 +498,14 @@ def main():
     millionPoundSales = numberOfMillionPoundSales(londonData)
     for key, value in sorted(millionPoundSales.iteritems(), key=lambda (k,v): (v,k)):
         finalOutput = finalOutput + "{}\t| {}\n".format(key, value).expandtabs(25)
+        print ("{}\t{}".format(key, value)).expandtabs(30)
+
+    #   Calculate number of million pound sales over tine
+    print ("\nCalculating number of million pound property sales over time")
+    finalOutput = finalOutput + "\nYear | Number of Million Pound Sales\n"
+    millionPoundSales = numberOfMillionPoundSalesOverTime(londonData)
+    for key, value in sorted(millionPoundSales.iteritems(), key=lambda (k,v): (v,k)):
+        finalOutput = finalOutput + "{} | {}\n".format(key, value).expandtabs(25)
         print ("{}\t{}".format(key, value)).expandtabs(30)
 
     #   Predict future prices using average percentage change for median price values
