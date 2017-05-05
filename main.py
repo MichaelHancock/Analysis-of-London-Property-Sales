@@ -111,6 +111,21 @@ def countSalesOverTime(londonData):
 
     return londonBoroughs
 
+def countTotalSalesOverTime(londonData):
+    years = {}
+
+    #   Populate keys of years
+    for year in londonData["year"]:
+        if not (year in years):
+            years.update({ year: 0 })
+
+    #   Populate sub-arrays
+    for index, key in enumerate(londonData["year"]):
+        if key in years:
+            years[key] = years[key] + 1
+
+    return years
+
 def meanPriceVsLondonDataAttribute(londonData, attribute):
     salesData = {}
     result = {}
@@ -360,7 +375,7 @@ def main():
         print ("{} {}".format(key, "\t{}".format(value))).expandtabs(30)
 
     #   Count the number of sales over time
-    print("\nCounting the total number of property sales between across time and boroughs").format(minYear, maxYear)
+    print("\nCounting the total number of property sales between across time and boroughs")
     boroughSaleCount = countSalesOverTime(londonData)
     maxSalesCount = getMinOrMaxPerYear(londonData, boroughSaleCount, True, False)
     minSalesCount = getMinOrMaxPerYear(londonData, boroughSaleCount, False, False)
@@ -368,6 +383,14 @@ def main():
     for key in sorted(maxSalesCount):
         finalOutput = finalOutput + "{} | Most sales: {} \n       Least sales: {}\n".format(key, maxSalesCount[key], minSalesCount[key]).expandtabs(25)
         print("{}:\tMost sales: {}.\n\tLeast sales: {}.\n").format(key, maxSalesCount[key], minSalesCount[key])
+
+    #   Count the avergae sales over time
+    print("\nCounting the average number of property sales between across time and boroughs")
+    finalOutput = finalOutput + "\nYear | Total Number of Sales\n".expandtabs(25)
+    averageSalesCount = countTotalSalesOverTime(londonData)
+    for key, value in sorted(averageSalesCount.iteritems()):
+        finalOutput = finalOutput + "{} | {}\n".format(key, value).expandtabs(25)
+        print ("{}\t{}".format(key, value)).expandtabs(30)
 
     #   Output detailed number of sales per borough to file
     output = "Borough\t| Year | Number Of Sales\n\n".expandtabs(25)

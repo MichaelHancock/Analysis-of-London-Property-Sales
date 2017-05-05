@@ -35,46 +35,68 @@ Bromley                  | 120352
 Wandsworth               | 136979
 
 Year | Borough With Most / Least Sales
-1995 | Most sales: Wandsworth: 4814 
+1995 | Most sales: Wandsworth: 4814
        Least sales: City of London: 155
-1996 | Most sales: Wandsworth: 6378 
+1996 | Most sales: Wandsworth: 6378
        Least sales: City of London: 275
-1997 | Most sales: Wandsworth: 7643 
+1997 | Most sales: Wandsworth: 7643
        Least sales: City of London: 319
-1998 | Most sales: Wandsworth: 7236 
+1998 | Most sales: Wandsworth: 7236
        Least sales: City of London: 424
-1999 | Most sales: Wandsworth: 9357 
+1999 | Most sales: Wandsworth: 9357
        Least sales: City of London: 536
-2000 | Most sales: Wandsworth: 7516 
+2000 | Most sales: Wandsworth: 7516
        Least sales: City of London: 431
-2001 | Most sales: Wandsworth: 8154 
+2001 | Most sales: Wandsworth: 8154
        Least sales: City of London: 365
-2002 | Most sales: Wandsworth: 8568 
+2002 | Most sales: Wandsworth: 8568
        Least sales: City of London: 391
-2003 | Most sales: Croydon: 7596 
+2003 | Most sales: Croydon: 7596
        Least sales: City of London: 479
-2004 | Most sales: Wandsworth: 8519 
+2004 | Most sales: Wandsworth: 8519
        Least sales: City of London: 377
-2005 | Most sales: Wandsworth: 7403 
+2005 | Most sales: Wandsworth: 7403
        Least sales: City of London: 303
-2006 | Most sales: Wandsworth: 9401 
+2006 | Most sales: Wandsworth: 9401
        Least sales: City of London: 295
-2007 | Most sales: Wandsworth: 8467 
+2007 | Most sales: Wandsworth: 8467
        Least sales: City of London: 268
-2008 | Most sales: Wandsworth: 3967 
+2008 | Most sales: Wandsworth: 3967
        Least sales: City of London: 141
-2009 | Most sales: Wandsworth: 4397 
+2009 | Most sales: Wandsworth: 4397
        Least sales: City of London: 157
-2010 | Most sales: Wandsworth: 5310 
+2010 | Most sales: Wandsworth: 5310
        Least sales: City of London: 235
-2011 | Most sales: Wandsworth: 5258 
+2011 | Most sales: Wandsworth: 5258
        Least sales: City of London: 256
-2012 | Most sales: Wandsworth: 5198 
+2012 | Most sales: Wandsworth: 5198
        Least sales: City of London: 195
-2013 | Most sales: Wandsworth: 6283 
+2013 | Most sales: Wandsworth: 6283
        Least sales: City of London: 434
-2014 | Most sales: Bromley: 6035 
+2014 | Most sales: Bromley: 6035
        Least sales: City of London: 309
+
+Year | Total Number of Sales
+1995 | 84503
+1996 | 108709
+1997 | 133546
+1998 | 133748
+1999 | 162882
+2000 | 147804
+2001 | 162610
+2002 | 174630
+2003 | 155085
+2004 | 165421
+2005 | 137610
+2006 | 172319
+2007 | 166391
+2008 | 81652
+2009 | 75365
+2010 | 91852
+2011 | 89725
+2012 | 92065
+2013 | 111990
+2014 | 117811
 
 Borough                  | Mean Sale Price
 Barking and Dagenham     | 144,996.00 GBP
@@ -149,45 +171,45 @@ Kensington and Chelsea   | 430,000.00 GBP
 Westminster              | 875,000.00 GBP
 
 Year | Borough With Most Expensive / Least Expensive Sales
-1995 | Most expensive borough: Kensington and Chelsea: 279,165.00 GBP 
+1995 | Most expensive borough: Kensington and Chelsea: 279,165.00 GBP
        Least expensive borough: Newham: 62,054.00 GBP
-1996 | Most expensive borough: Kensington and Chelsea: 305,595.00 GBP 
+1996 | Most expensive borough: Kensington and Chelsea: 305,595.00 GBP
        Least expensive borough: Newham: 63,763.00 GBP
-1997 | Most expensive borough: Kensington and Chelsea: 356,040.00 GBP 
+1997 | Most expensive borough: Kensington and Chelsea: 356,040.00 GBP
        Least expensive borough: Barking and Dagenham: 66,184.00 GBP
-1998 | Most expensive borough: Kensington and Chelsea: 376,155.00 GBP 
+1998 | Most expensive borough: Kensington and Chelsea: 376,155.00 GBP
        Least expensive borough: Barking and Dagenham: 70,846.00 GBP
-1999 | Most expensive borough: Kensington and Chelsea: 433,534.00 GBP 
+1999 | Most expensive borough: Kensington and Chelsea: 433,534.00 GBP
        Least expensive borough: Barking and Dagenham: 74,822.00 GBP
-2000 | Most expensive borough: Kensington and Chelsea: 554,924.00 GBP 
+2000 | Most expensive borough: Kensington and Chelsea: 554,924.00 GBP
        Least expensive borough: Barking and Dagenham: 87,268.00 GBP
-2001 | Most expensive borough: Kensington and Chelsea: 585,903.00 GBP 
+2001 | Most expensive borough: Kensington and Chelsea: 585,903.00 GBP
        Least expensive borough: Barking and Dagenham: 96,195.00 GBP
-2002 | Most expensive borough: Kensington and Chelsea: 617,064.00 GBP 
+2002 | Most expensive borough: Kensington and Chelsea: 617,064.00 GBP
        Least expensive borough: Barking and Dagenham: 119,537.00 GBP
-2003 | Most expensive borough: Kensington and Chelsea: 657,300.00 GBP 
+2003 | Most expensive borough: Kensington and Chelsea: 657,300.00 GBP
        Least expensive borough: Barking and Dagenham: 145,931.00 GBP
-2004 | Most expensive borough: Kensington and Chelsea: 712,578.00 GBP 
+2004 | Most expensive borough: Kensington and Chelsea: 712,578.00 GBP
        Least expensive borough: Barking and Dagenham: 163,713.00 GBP
-2005 | Most expensive borough: Kensington and Chelsea: 757,087.00 GBP 
+2005 | Most expensive borough: Kensington and Chelsea: 757,087.00 GBP
        Least expensive borough: Barking and Dagenham: 169,737.00 GBP
-2006 | Most expensive borough: Kensington and Chelsea: 878,320.00 GBP 
+2006 | Most expensive borough: Kensington and Chelsea: 878,320.00 GBP
        Least expensive borough: Barking and Dagenham: 174,864.00 GBP
-2007 | Most expensive borough: Kensington and Chelsea: 1,030,321.00 GBP 
+2007 | Most expensive borough: Kensington and Chelsea: 1,030,321.00 GBP
        Least expensive borough: Barking and Dagenham: 192,579.00 GBP
-2008 | Most expensive borough: Kensington and Chelsea: 1,187,310.00 GBP 
+2008 | Most expensive borough: Kensington and Chelsea: 1,187,310.00 GBP
        Least expensive borough: Barking and Dagenham: 196,717.00 GBP
-2009 | Most expensive borough: Kensington and Chelsea: 1,038,524.00 GBP 
+2009 | Most expensive borough: Kensington and Chelsea: 1,038,524.00 GBP
        Least expensive borough: Barking and Dagenham: 166,317.00 GBP
-2010 | Most expensive borough: Kensington and Chelsea: 1,247,825.00 GBP 
+2010 | Most expensive borough: Kensington and Chelsea: 1,247,825.00 GBP
        Least expensive borough: Barking and Dagenham: 178,906.00 GBP
-2011 | Most expensive borough: Kensington and Chelsea: 1,287,522.00 GBP 
+2011 | Most expensive borough: Kensington and Chelsea: 1,287,522.00 GBP
        Least expensive borough: Barking and Dagenham: 180,263.00 GBP
-2012 | Most expensive borough: Kensington and Chelsea: 1,527,450.00 GBP 
+2012 | Most expensive borough: Kensington and Chelsea: 1,527,450.00 GBP
        Least expensive borough: Barking and Dagenham: 181,866.00 GBP
-2013 | Most expensive borough: Kensington and Chelsea: 1,656,727.00 GBP 
+2013 | Most expensive borough: Kensington and Chelsea: 1,656,727.00 GBP
        Least expensive borough: Barking and Dagenham: 187,472.00 GBP
-2014 | Most expensive borough: Kensington and Chelsea: 1,951,497.00 GBP 
+2014 | Most expensive borough: Kensington and Chelsea: 1,951,497.00 GBP
        Least expensive borough: Barking and Dagenham: 215,102.00 GBP
 
 Borough                  | Percentage Change in Price Between 1995 and 2014
